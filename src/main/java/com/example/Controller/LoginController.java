@@ -1,7 +1,7 @@
 package com.example.Controller;
 import com.example.DAO.DAO_Compte;
 import com.example.Entities.*;
-import com.example.projetjava2023.HelloApplication;
+import com.example.Projetjava.HelloApplication;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -176,7 +176,7 @@ public class LoginController implements Initializable {
     public void switchInterfaces() throws SQLException, IOException {
         Personne personne =connecter();
         if (personne==null)
-            com.example.projetjava2023.HelloApplication.setRoot("login-view");//**** on remplace par l'inerface pour le signup
+            com.example.Projetjava.HelloApplication.setRoot("login-view");//**** on remplace par l'inerface pour le signup
         else
             switch (personne.compte.getType()) {
                 case "acteur": {

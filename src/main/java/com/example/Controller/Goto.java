@@ -18,7 +18,7 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import org.controlsfx.control.Rating ;
+// import org.controlsfx.control.Rating ;
 
 import java.io.IOException;
 import java.net.URL;
@@ -137,11 +137,11 @@ public class Goto implements Initializable {
 
     @FXML
     private Button out;
-    @FXML
+  /*  @FXML
     private Rating rating;
 
     @FXML
-    private Label ratinglabel;
+    private Label ratinglabel;*/
     @FXML
     public void AfficherSeries(){
         VboxToChange.getChildren().clear();
