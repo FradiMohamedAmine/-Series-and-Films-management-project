@@ -1,7 +1,6 @@
 package com.example.Controller;
 import com.example.DAO.DAO_Compte;
 import com.example.Entities.*;
-import com.example.Projetjava.HelloApplication;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -12,6 +11,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import com.example.Projetjava.HelloApplication;
 
 import java.io.IOException;
 import java.net.URL;
@@ -77,8 +77,14 @@ public class LoginController implements Initializable {
     }
 
     @FXML
-    public void handle() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/kindaDone/hello-view.fxml"));
+    public void handleUtilisateur() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/hello-view.fxml"));
+        Parent loginRoot = loader.load();
+        Scene currentScene =btnsignin.getScene();
+        currentScene.setRoot(loginRoot);
+    }
+    public void handleProducteur() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/hello-view-producteurtest.fxml"));
         Parent loginRoot = loader.load();
         Scene currentScene =btnsignin.getScene();
         currentScene.setRoot(loginRoot);
@@ -98,8 +104,8 @@ public class LoginController implements Initializable {
     public void njareb(ActionEvent event) throws IOException {
         HelloApplication.setRoot("login_view");//yraj3o ll login bch yaml sign in
     }
-   @FXML
-   public void signUp(ActionEvent event) throws IOException, SQLException {
+    @FXML
+    public void signUp(ActionEvent event) throws IOException, SQLException {
         String usernam = username.getText();
         String email = mail1.getText();
         String passwrd = password.getText();
@@ -130,12 +136,12 @@ public class LoginController implements Initializable {
         if(ajouterCompte(newUser))
             showAlert("Account created successfully.");
         else showAlert("Account non created .");
-       // clear text fields after sign up
-       username.clear();
-       mail1.clear();
-       password.clear();
-      combox.setValue(null);
-      gotosignin(event);
+        // clear text fields after sign up
+        username.clear();
+        mail1.clear();
+        password.clear();
+        combox.setValue(null);
+        gotosignin(event);
     }
 
     private boolean isValidEmail(String email) {
@@ -178,24 +184,23 @@ public class LoginController implements Initializable {
         if (personne==null)
             com.example.Projetjava.HelloApplication.setRoot("login-view");//**** on remplace par l'inerface pour le signup
         else
-            switch (personne.compte.getType()) {
+            switch (personne.getCompte().getType()) {
                 case "acteur": {
-                   handle();
+                    handleUtilisateur();
                     //  showAlert(p.toString());
                 }
                 case "utilisateur": {
-                    handle();
-
-                   // Utislisateur u = new Utislisateur(personne.getNomprenom(),personne.getCompte());
-                   // com.example.projetjavanerflix.HelloApplication.setRoot("+++++");//+++++on remplace par les interface utilisateur
+                    handleUtilisateur();
+                    // Utislisateur u = new Utislisateur(personne.getNomprenom(),personne.getCompte());
+                    // com.example.projetjavanerflix.App.setRoot("+++++");//+++++on remplace par les interface utilisateur
 
                 }
                 case "producteur": {
-                    handle();
+                    handleProducteur();
                 }
-                    Producteur pr = new Producteur(personne.getNomprenom(), personne.getCompte());
-                   // com.example.projetjavanerflix.HelloApplication.setRoot("+++++");//+++++on remplace par les interface producteur
-                   // showAlert(p.toString());}
+                Producteur pr = new Producteur(personne.getNomprenom(), personne.getCompte());
+                // com.example.projetjavanerflix.App.setRoot("+++++");//+++++on remplace par les interface producteur
+                // showAlert(p.toString());}
             }
 
 
@@ -203,10 +208,10 @@ public class LoginController implements Initializable {
     @FXML
     private  Personne connecter() throws SQLException, IOException {
 
-      Personne personne=DAO_Compte.get(mail.getText(),pswd.getText());
-      p=personne;
+        Personne personne=DAO_Compte.get(mail.getText(),pswd.getText());
+        p=personne;
 
-      return personne;
+        return personne;
 
     }
     @FXML

@@ -8,8 +8,10 @@ import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
@@ -42,6 +44,10 @@ public class SerieDetailsController {
     private ComboBox numSaison;
     @FXML
     private Label producteur;
+    @FXML
+    private Button btnAvis;
+    @FXML
+    private TextField textAvis;
     public void setData(Serie s) throws IOException {
         if (s.getCover() != null) {
             InputStream stream = new FileInputStream(s.getCover());
@@ -60,9 +66,14 @@ public class SerieDetailsController {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/LesAvisProduit.fxml"));
         Node node = loader.load();
         // Set the data of the corresponding StudentItemController
-                LesAvisProduitController lesAvisProduitController = loader.getController();
+        LesAvisProduitController lesAvisProduitController = loader.getController();
 
-                lesAvisProduitController.initTable(s.getTitre(),l);
+        lesAvisProduitController.initTable(s.getTitre(),l);
         avis.getChildren().add(node);
+        if (LoginController.p.getCompte().getType() != "utilisateur") {
+            this.btnAvis.setVisible(false);
+            this.btnAvis.setVisible(false);
+            this.textAvis.setVisible(false);
+        }
     }
 }

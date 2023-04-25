@@ -13,27 +13,27 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="1300.0" maxWidth="1601.0" minHeight="908.0" minWidth="1097.0" prefHeight="908.0" prefWidth="1097.0" style="-fx-background-color: black;" styleClass="primary_color" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.Goto">
+<BorderPane maxHeight="1300.0" maxWidth="1601.0" minHeight="908.0" minWidth="1097.0" prefHeight="908.0" prefWidth="1097.0" style="-fx-background-color: black;" styleClass="primary_color" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.Goto">
     <left>
-        <VBox prefHeight="908.0" prefWidth="201.0" spacing="20.0" styleClass="secondary-color" stylesheets="@../style.css" BorderPane.alignment="CENTER">
+        <VBox prefHeight="908.0" prefWidth="201.0" spacing="20.0" styleClass="secondary-color" stylesheets="@style.css" BorderPane.alignment="CENTER">
             <children>
                 <ImageView fitHeight="77.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../logo.png" />
+                        <Image url="@logo.png" />
                     </image>
                     <VBox.margin>
                         <Insets left="30.0" top="40.0" />
                     </VBox.margin>
                 </ImageView>
-                <VBox prefHeight="135.0" prefWidth="179.0" spacing="20.0" styleClass="selected" stylesheets="@../style.css">
+                <VBox prefHeight="135.0" prefWidth="179.0" spacing="20.0" styleClass="selected" stylesheets="@style.css">
                     <children>
-                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="button1" stylesheets="@../fullpackstyling.css">
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="button1" stylesheets="@fullpackstyling.css">
                             <graphic>
                                 <HBox alignment="CENTER" onMouseClicked="#handle2" prefHeight="0.0" prefWidth="130.0" spacing="10.0">
                                     <children>
                                         <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@../home-w-icon.png" />
+                                                <Image url="@home-w-icon.png" />
                                             </image>
                                         </ImageView>
                                         <Label prefHeight="0.0" prefWidth="97.0" text="HOME" textFill="WHITE">
@@ -48,13 +48,13 @@
                                 <Insets />
                             </VBox.margin>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="button1" stylesheets="@../fullpackstyling.css">
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="button1" stylesheets="@fullpackstyling.css">
                             <graphic>
                                 <HBox alignment="CENTER" onMouseClicked="#AfficherSeries" prefHeight="24.0" prefWidth="130.0" spacing="10.0" style="-fx-background-color: transparent;">
                                     <children>
                                         <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@../icons8-lecture-50.png" />
+                                                <Image url="@icons8-lecture-50.png" />
                                             </image>
                                         </ImageView>
                                         <Label prefHeight="18.0" prefWidth="119.0" styleClass="selected" text="SERIES" textFill="WHITE">
@@ -66,13 +66,13 @@
                                 </HBox>
                             </graphic>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="button1" stylesheets="@../fullpackstyling.css">
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="button1" stylesheets="@fullpackstyling.css">
                             <graphic>
                                 <HBox alignment="CENTER" onMouseClicked="#AfficherFilm" prefHeight="23.0" prefWidth="149.0" spacing="10.0">
                                     <children>
                                         <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@../icons8-film-24.png" />
+                                                <Image url="@icons8-film-24.png" />
                                             </image>
                                         </ImageView>
                                         <Label prefHeight="35.0" prefWidth="143.0" text="FILMS" textFill="WHITE">
@@ -92,9 +92,9 @@
                         <Insets top="20.0" />
                     </VBox.margin>
                 </VBox>
-                <VBox prefHeight="160.0" prefWidth="179.0" spacing="10.0" styleClass="selected" stylesheets="@../style.css">
+                <VBox prefHeight="160.0" prefWidth="179.0" spacing="10.0" styleClass="selected" stylesheets="@style.css">
                     <children>
-                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="button1" stylesheets="@../fullpackstyling.css">
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="button1" stylesheets="@fullpackstyling.css">
                             <graphic>
                                 <Label prefHeight="19.0" prefWidth="130.0" text="Coming Soon" textFill="#f4f4f4">
                                     <font>
@@ -103,7 +103,7 @@
                                     <graphic>
                                         <ImageView fitHeight="22.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@../icons8-la-publicité-24.png" />
+                                                <Image url="@icons8-la-publicité-24.png" />
                                             </image>
                                         </ImageView>
                                     </graphic>
@@ -113,7 +113,7 @@
                                 </Label>
                             </graphic>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="172.0" styleClass="button1" stylesheets="@../fullpackstyling.css">
+                        <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="172.0" styleClass="button1" stylesheets="@fullpackstyling.css">
                             <graphic>
                                 <Label prefHeight="32.0" prefWidth="154.0" text="Recently Watched" textFill="#f4f4f4">
                                     <font>
@@ -122,7 +122,7 @@
                                     <graphic>
                                         <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@../icons8-espion-64.png" />
+                                                <Image url="@icons8-espion-64.png" />
                                             </image>
                                         </ImageView>
                                     </graphic>
@@ -132,7 +132,7 @@
                                 </Label>
                             </graphic>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="144.0" styleClass="button1" stylesheets="@../fullpackstyling.css">
+                        <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="144.0" styleClass="button1" stylesheets="@fullpackstyling.css">
                             <graphic>
                                 <Label prefHeight="40.0" prefWidth="150.0" text="favoris" textFill="#f4f4f4">
                                     <font>
@@ -141,7 +141,7 @@
                                     <graphic>
                                         <ImageView fitHeight="24.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@../icons8-aimer-50.png" />
+                                                <Image url="@icons8-aimer-50.png" />
                                             </image>
                                         </ImageView>
                                     </graphic>
@@ -161,16 +161,16 @@
                 </VBox>
                 <ImageView fx:id="logout" fitHeight="29.0" fitWidth="47.0" onMouseClicked="#handle" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../logout-icon.png" />
+                        <Image url="@logout-icon.png" />
                     </image>
                 </ImageView>
-                <VBox prefHeight="231.0" prefWidth="242.0" styleClass="selected" stylesheets="@../style.css">
+                <VBox prefHeight="231.0" prefWidth="242.0" styleClass="selected" stylesheets="@style.css">
                     <children>
                         <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="20.0">
                             <children>
                                 <ImageView fitHeight="26.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@../icons8-ajouter-un-employé-à-la-société-66.png" />
+                                        <Image url="@icons8-ajouter-un-employé-à-la-société-66.png" />
                                     </image>
                                 </ImageView>
                                 <Label prefHeight="18.0" prefWidth="119.0" text="Contact Us" textFill="WHITE">
@@ -193,7 +193,7 @@
                             <children>
                                 <ImageView fitHeight="24.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@../icons8-privacy-policy-24.png" />
+                                        <Image url="@icons8-privacy-policy-24.png" />
                                     </image>
                                 </ImageView>
                                 <Label prefHeight="18.0" prefWidth="119.0" text="Our Policy" textFill="WHITE">
@@ -210,7 +210,7 @@
                             <children>
                                 <ImageView fitHeight="22.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@../icons8-about-24.png" />
+                                        <Image url="@icons8-about-24.png" />
                                     </image>
                                 </ImageView>
                                 <Label prefHeight="18.0" prefWidth="119.0" text="About US" textFill="WHITE">
@@ -227,7 +227,7 @@
                             <children>
                                 <ImageView fitHeight="24.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@../icons8-aide-24.png" />
+                                        <Image url="@icons8-aide-24.png" />
                                     </image>
                                 </ImageView>
                                 <Label prefHeight="18.0" prefWidth="119.0" text="Help" textFill="WHITE">
@@ -263,7 +263,7 @@
                                     <graphic>
                                         <ImageView fitHeight="24.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@../previous-icon.png" />
+                                                <Image url="@previous-icon.png" />
                                             </image>
                                         </ImageView>
                                     </graphic>
@@ -275,7 +275,7 @@
                                     <graphic>
                                         <ImageView fitHeight="23.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@../next-icon.png" />
+                                                <Image url="@next-icon.png" />
                                             </image>
                                         </ImageView>
                                     </graphic>
@@ -288,14 +288,14 @@
                                 <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                             </HBox.margin>
                         </HBox>
-                        <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" prefHeight="58.0" prefWidth="382.0" styleClass="search-container" stylesheets="@../style.css">
+                        <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" prefHeight="58.0" prefWidth="382.0" styleClass="search-container" stylesheets="@style.css">
                             <HBox.margin>
                                 <Insets bottom="10.0" right="200.0" top="10.0" />
                             </HBox.margin>
                             <children>
                                 <ImageView fitHeight="28.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@../search-icon.png" />
+                                        <Image url="@search-icon.png" />
                                     </image>
                                     <HBox.margin>
                                         <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
@@ -308,7 +308,7 @@
                             <children>
                                 <ImageView fitHeight="28.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@../user.png" />
+                                        <Image url="@user.png" />
                                     </image>
                                     <HBox.margin>
                                         <Insets right="20.0" />
@@ -343,7 +343,7 @@
                                     <children>
                                         <ImageView fitHeight="499.0" fitWidth="900.0" layoutX="61.0" layoutY="-18.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-49.80000000000001" AnchorPane.leftAnchor="61.0" AnchorPane.rightAnchor="155.08891601562505" AnchorPane.topAnchor="-18.0">
                                             <image>
-                                                <Image url="@../deutscherfilm-goethe-institut-chefamajedid (1).jpg" />
+                                                <Image url="@deutscherfilm-goethe-institut-chefamajedid (1).jpg" />
                                             </image>
                                         </ImageView>
                                     </children>
@@ -363,7 +363,7 @@
                                                      <children>
                                                         <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
                                                            <image>
-                                                              <Image url="@../romantic.jpg" />
+                                                              <Image url="@romantic.jpg" />
                                                            </image>
                                                         </ImageView>
                                                      </children>
@@ -392,7 +392,7 @@
                                                           <children>
                                                               <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
                                                                   <image>
-                                                                      <Image url="@../romantic.jpg" />
+                                                                      <Image url="@romantic.jpg" />
                                                                   </image>
                                                               </ImageView>
                                                           </children>
@@ -421,7 +421,7 @@
                                                           <children>
                                                               <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
                                                                   <image>
-                                                                      <Image url="@../romantic.jpg" />
+                                                                      <Image url="@romantic.jpg" />
                                                                   </image>
                                                               </ImageView>
                                                           </children>
@@ -450,7 +450,7 @@
                                                           <children>
                                                               <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
                                                                   <image>
-                                                                      <Image url="@../romantic.jpg" />
+                                                                      <Image url="@romantic.jpg" />
                                                                   </image>
                                                               </ImageView>
                                                           </children>
@@ -478,7 +478,7 @@
                                                           <children>
                                                               <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
                                                                   <image>
-                                                                      <Image url="@../romantic.jpg" />
+                                                                      <Image url="@romantic.jpg" />
                                                                   </image>
                                                               </ImageView>
                                                           </children>
@@ -506,7 +506,7 @@
                                                           <children>
                                                               <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
                                                                   <image>
-                                                                      <Image url="@../romantic.jpg" />
+                                                                      <Image url="@romantic.jpg" />
                                                                   </image>
                                                               </ImageView>
                                                           </children>
@@ -536,7 +536,7 @@
                                                           <children>
                                                               <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
                                                                   <image>
-                                                                      <Image url="@../romantic.jpg" />
+                                                                      <Image url="@romantic.jpg" />
                                                                   </image>
                                                               </ImageView>
                                                           </children>
@@ -560,7 +560,7 @@
                                                                 <children>
                                                                     <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
                                                                         <image>
-                                                                            <Image url="@../romantic.jpg" />
+                                                                            <Image url="@romantic.jpg" />
                                                                         </image>
                                                                     </ImageView>
                                                                 </children>
@@ -591,7 +591,7 @@
                                                           <children>
                                                               <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
                                                                   <image>
-                                                                      <Image url="@../romantic.jpg" />
+                                                                      <Image url="@romantic.jpg" />
                                                                   </image>
                                                               </ImageView>
                                                           </children>
@@ -620,7 +620,7 @@
                                                           <children>
                                                               <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
                                                                   <image>
-                                                                      <Image url="@../romantic.jpg" />
+                                                                      <Image url="@romantic.jpg" />
                                                                   </image>
                                                               </ImageView>
                                                           </children>
@@ -650,7 +650,7 @@
                                                           <children>
                                                               <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
                                                                   <image>
-                                                                      <Image url="@../romantic.jpg" />
+                                                                      <Image url="@romantic.jpg" />
                                                                   </image>
                                                               </ImageView>
                                                           </children>
@@ -679,7 +679,7 @@
                                                           <children>
                                                               <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
                                                                   <image>
-                                                                      <Image url="@../romantic.jpg" />
+                                                                      <Image url="@romantic.jpg" />
                                                                   </image>
                                                               </ImageView>
                                                           </children>
@@ -708,7 +708,7 @@
                                                           <children>
                                                               <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
                                                                   <image>
-                                                                      <Image url="@../romantic.jpg" />
+                                                                      <Image url="@romantic.jpg" />
                                                                   </image>
                                                               </ImageView>
                                                           </children>
@@ -737,7 +737,7 @@
                                                           <children>
                                                               <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
                                                                   <image>
-                                                                      <Image url="@../romantic.jpg" />
+                                                                      <Image url="@romantic.jpg" />
                                                                   </image>
                                                               </ImageView>
                                                           </children>

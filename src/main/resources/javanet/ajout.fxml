@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane minWidth="350.0" prefHeight="575.0" prefWidth="459.0" style="-fx-background-color: black; -fx-border-color: #DAA520; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.AvisProduitController">
+   <children>
+      <TabPane fx:id="tabPane" layoutX="-38.0" layoutY="130.0" prefHeight="570.0" prefWidth="527.0" stylesheets="@main.css" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab style="-fx-background-color: transparent;" text="Film">
+               <content>
+                  <VBox alignment="CENTER" prefHeight="530.0" prefWidth="465.0" spacing="20.0">
+                     <children>
+                        <TextField fx:id="titrefilm" prefHeight="45.0" promptText="nom du Film" style="-fx-background-color: transp; -fx-border-color: grey; -fx-border-radius: 70;">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </TextField>
+                        <TextField fx:id="producteurF" prefHeight="45.0" promptText="nom du serie" style="-fx-background-color: transp; -fx-border-color: grey; -fx-border-radius: 70;" text="nom producteur">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </TextField>
+                        <TextField fx:id="langueF" layoutX="55.0" layoutY="228.0" prefHeight="45.0" promptText="langue" style="-fx-background-color: trans; -fx-border-color: grey; -fx-border-radius: 70;">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </TextField>
+                        <TextField fx:id="anneSortieF" prefHeight="45.0" promptText="Annee Sortie" style="-fx-background-color: trans; -fx-border-color: grey; -fx-border-radius: 70;">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </TextField>
+                        <TextField fx:id="paysF" layoutX="55.0" layoutY="261.0" prefHeight="45.0" promptText="pays" style="-fx-background-color: trans; -fx-border-color: grey; -fx-border-radius: 70;">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </TextField>
+                        <TextField fx:id="dureeF" prefHeight="45.0" promptText="pays" style="-fx-background-color: trans; -fx-border-color: grey; -fx-border-radius: 70;" text="duree">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </TextField>
+                        <ComboBox fx:id="comboboxF" prefHeight="38.0" prefWidth="436.0" promptText="genre" style="-fx-background-color: transparent; -fx-border-color: grey; -fx-border-radius: 70;" />
+                        <Button fx:id="btnCommitS" mnemonicParsing="false" onAction="#ajoutfilm" prefHeight="46.0" prefWidth="222.0" style="-fx-background-color: #DAA520;" text="commit" />
+                     </children>
+                     <padding>
+                        <Insets bottom="45.0" left="45.0" right="45.0" top="45.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </Tab>
+            <Tab fx:id="anneSortieS" style="-fx-background-color: transparent;" text="Serie">
+               <content>
+                  <VBox alignment="CENTER" prefHeight="530.0" prefWidth="465.0" spacing="20.0">
+                     <children>
+                        <TextField fx:id="titreserie" prefHeight="45.0" promptText="nom du serie" style="-fx-background-color: transp; -fx-border-color: grey; -fx-border-radius: 70;">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </TextField>
+                        <TextField fx:id="producteurS" prefHeight="45.0" promptText="nom du serie" style="-fx-background-color: transp; -fx-border-color: grey; -fx-border-radius: 70;" text="nom producteur">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </TextField>
+                        <TextField fx:id="langueS" layoutX="55.0" layoutY="228.0" prefHeight="45.0" promptText="langue" style="-fx-background-color: trans; -fx-border-color: grey; -fx-border-radius: 70;">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </TextField>
+                        <TextField fx:id="anneeSortieS" prefHeight="45.0" promptText="pays" style="-fx-background-color: trans; -fx-border-color: grey; -fx-border-radius: 70;" text="Année sortie">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </TextField>
+                        <TextField fx:id="paysS" layoutX="55.0" layoutY="261.0" prefHeight="45.0" promptText="pays" style="-fx-background-color: trans; -fx-border-color: grey; -fx-border-radius: 70;">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </TextField>
+                        <ComboBox fx:id="comboboxS" prefHeight="38.0" prefWidth="436.0" promptText="genre" style="-fx-background-color: transparent; -fx-border-color: grey; -fx-border-radius: 70;" />
+                        <Button fx:id="S" mnemonicParsing="false" onAction="#ajoutfilm" prefHeight="46.0" prefWidth="222.0" style="-fx-background-color: #DAA520;" text="commit" />
+                     </children>
+                     <padding>
+                        <Insets bottom="45.0" left="45.0" right="45.0" top="45.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </Tab>
+         </tabs>
+         <padding>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </padding>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -48,7 +48,7 @@ public class SerieItemController {
         ServiceFavoris sF = new ServiceFavoris();
         sF.ajouterSerieFavorisDunUtilisateur(s,u.nomprenom);
     }
-   @FXML
+    @FXML
     public void afficherDetailsSerie() throws IOException {
         Serie s=ServiceSerie.afficherSerie(namef.getText());
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/serie_details.fxml"));
