@@ -4,27 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7161c78a-7d21-4e47-9b0e-35ab4905e204" name="Changes" comment="initial">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Controller/AjoutProduitController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Controller/GotoActeur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Controller/FilmDetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Controller/FilmDetailsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Controller/FilmItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Controller/FilmItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Controller/Goto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Controller/Goto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Controller/LesAvisProduitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Controller/LesAvisProduitController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Controller/SerieDetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Controller/SerieDetailsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Controller/SerieItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Controller/SerieItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/AvisProduit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/AvisProduit.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/LesAvisProduit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/LesAvisProduit.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/film.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/film.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/film_details.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/film_details.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/kindaDone/ajout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/ajout.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/kindaDone/hello-view-producteurtest.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/hello-view-producteurtest.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/kindaDone/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/kindaDone/login-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/login-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/serie.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/serie.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/serie_details.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/serie_details.fxml" afterDir="false" />
+    <list default="true" id="7161c78a-7d21-4e47-9b0e-35ab4905e204" name="Changes" comment="done">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Service/ServiceAvis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Service/ServiceAvis.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,8 +98,16 @@
       <workItem from="1682450305081" duration="931000" />
       <workItem from="1682451256720" duration="2378000" />
       <workItem from="1682454125535" duration="2763000" />
-      <workItem from="1682463114948" duration="740000" />
+      <workItem from="1682463114948" duration="826000" />
     </task>
+    <task id="LOCAL-00001" summary="done">
+      <created>1682463882988</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682463882988</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,5 +123,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="done" />
+    <option name="LAST_COMMIT_MESSAGE" value="done" />
   </component>
 </project>

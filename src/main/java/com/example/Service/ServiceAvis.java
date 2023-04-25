@@ -20,6 +20,12 @@ public class ServiceAvis {
             return DAO_Avis.insererAvisSaison(av);
         else return false;
     }
+    public static boolean ajouterAvisFilm (AvisProduit av){
+        Film f= ServiceFilm.afficherFilm(av.getNomProduit());
+        if(!contientAvisFilm(av.getUtilisateur(),f))
+            return DAO_Avis.insererAvisFilm(av);
+        else return false;
+    }
     public static  boolean ajouterAvisEpisode(AvisEpisode av){
         Episode ep =ServiceEpisode.afficherEpisode(av.getNomProduit(),av.getNumSaison(), av.getNumSaison());
         if(!contientAvisEpisode(av.getUtilisateur(),ep))
