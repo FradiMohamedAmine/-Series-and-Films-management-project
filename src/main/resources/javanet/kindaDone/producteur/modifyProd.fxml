@@ -16,11 +16,11 @@
    <children>
       <TabPane fx:id="tabPane" prefHeight="428.0" prefWidth="510.0" stylesheets="@../../main.css" tabClosingPolicy="UNAVAILABLE">
          <tabs>
-            <Tab fx:id="signin" text="username">
+            <Tab fx:id="signin" style="-fx-background-color: transparent;" text="username">
                <content>
                   <VBox alignment="CENTER" prefHeight="369.0" prefWidth="479.0" spacing="20.0">
                      <children>
-                        <TextField fx:id="username" prefHeight="45.0" promptText="old username">
+                        <TextField fx:id="username" prefHeight="45.0" promptText="old username" style="-fx-background-color: trans; -fx-border-radius: 30; -fx-border-color: #F4C430;">
                            <VBox.margin>
                               <Insets />
                            </VBox.margin>
@@ -28,7 +28,7 @@
                               <Insets left="20.0" />
                            </padding>
                         </TextField>
-                        <PasswordField fx:id="pswd" prefHeight="45.0" promptText="nouveau username">
+                        <PasswordField fx:id="pswd" prefHeight="45.0" promptText="nouveau username" style="-fx-background-color: trans; -fx-border-radius: 30; -fx-border-color: #F4C430;">
                            <padding>
                               <Insets left="20.0" />
                            </padding>
@@ -41,16 +41,16 @@
                   </VBox>
                </content>
             </Tab>
-            <Tab text="password">
+            <Tab style="-fx-background-color: transparent;" text="password">
                <content>
                   <VBox alignment="CENTER" prefHeight="349.0" prefWidth="344.0" spacing="20.0">
                      <children>
-                        <TextField prefHeight="45.0" promptText="old password " style="-fx-background-color: trans; -fx-border-color: grey; -fx-border-radius: 70;">
+                        <TextField prefHeight="45.0" promptText="old password " style="-fx-background-color: trans; -fx-border-color: #F4C430; -fx-border-radius: 70;">
                            <padding>
                               <Insets left="20.0" />
                            </padding>
                         </TextField>
-                        <TextField prefHeight="45.0" prefWidth="340.0" promptText="nv password " style="-fx-background-color: trans; -fx-border-color: grey; -fx-border-radius: 70;">
+                        <TextField prefHeight="45.0" prefWidth="340.0" promptText="nv password " style="-fx-background-color: trans; -fx-border-color: #F4C430; -fx-border-radius: 70;">
                            <VBox.margin>
                               <Insets />
                            </VBox.margin>
@@ -58,7 +58,7 @@
                               <Insets left="20.0" />
                            </padding>
                         </TextField>
-                        <PasswordField prefHeight="45.0" promptText="confirm nv Password" style="-fx-background-color: trans; -fx-border-color: grey; -fx-border-radius: 70;">
+                        <PasswordField prefHeight="45.0" promptText="confirm nv Password" style="-fx-background-color: trans; -fx-border-color: #F4C430; -fx-border-radius: 70;">
                            <padding>
                               <Insets left="20.0" />
                            </padding>

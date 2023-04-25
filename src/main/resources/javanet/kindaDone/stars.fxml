@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane prefHeight="117.0" prefWidth="200.0" style="-fx-background-color: black; -fx-border-color: #DAA520; -fx-border-width: 2; -fx-border-radius: 20; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.StarsController">
+   <children>
+      <Rating fx:id="rating" layoutX="12.0" layoutY="27.0" prefHeight="32.0" prefWidth="142.0" style="-fx-background-color: black;" />
+      <Label fx:id="score" layoutX="25.0" layoutY="63.0" prefHeight="38.0" prefWidth="136.0" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

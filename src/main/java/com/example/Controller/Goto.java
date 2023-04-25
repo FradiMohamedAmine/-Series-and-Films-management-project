@@ -4,8 +4,6 @@ import com.example.DAO.DAO_Serie;
 import com.example.DAO.DAO_film;
 import com.example.Entities.Film;
 import com.example.Entities.Serie;
-import com.example.Service.ServiceFilm;
-import com.example.Service.ServiceSerie;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -20,15 +18,10 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import javafx.stage.FileChooser;
 import org.controlsfx.control.Rating ;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
-import java.nio.file.Files;
-import java.sql.SQLException;
-import java.util.List;
 import java.util.ResourceBundle;
 
 public class Goto implements Initializable {
@@ -188,7 +181,7 @@ public class Goto implements Initializable {
     }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-       this.username.setText(loginController.p.getNomprenom());
+       this.username.setText(LoginController.p.getNomprenom());
         scrollFilmRomantic.setFitToWidth(true);
         addCardToScrollPaneFilmsRom(FXCollections.observableArrayList(DAO_film.findAll()));
         scrollSerieRomantic.setFitToWidth(true);

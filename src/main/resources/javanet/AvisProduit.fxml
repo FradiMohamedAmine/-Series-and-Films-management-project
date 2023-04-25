@@ -5,7 +5,7 @@
 
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.AvisProduitController">
    <children>
-      <Label fx:id="username" prefHeight="35.0" prefWidth="183.0" />
-      <Label fx:id="preview" prefHeight="35.0" prefWidth="343.0" />
+      <Label fx:id="username" prefHeight="35.0" prefWidth="183.0" text="Username" />
+      <Label fx:id="preview" prefHeight="35.0" prefWidth="343.0" text="Avis" />
    </children>
 </HBox>

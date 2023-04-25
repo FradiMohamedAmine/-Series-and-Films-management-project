@@ -5,49 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7161c78a-7d21-4e47-9b0e-35ab4905e204" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/javanet/kindaDone/genre.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/DAO/DAO_Compte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/DAO/DAO_Compte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/DAO/DAO_Episode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/DAO/DAO_Episode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/DAO/DAO_Saison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/DAO/DAO_Saison.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/DAO/DAO_Serie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/DAO/DAO_Serie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/DAO/DAO_favoris.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/DAO/DAO_favoris.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/DAO/DAO_film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/DAO/DAO_film.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/DAO/DAO_notif.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/DAO/DAO_notif.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/DAO/DAO_producteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/DAO/DAO_producteur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/DAO/DAO_utilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/DAO/DAO_utilisateur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Entities/Acteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Entities/Acteur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Entities/Episode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Entities/Episode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Entities/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Entities/Genre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Entities/Produit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Entities/Produit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Entities/Saison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Entities/Saison.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Service/ServiceCompte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Service/ServiceCompte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Service/ServiceEpisode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Service/ServiceEpisode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Service/ServiceFavoris.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Service/ServiceFavoris.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Service/ServiceNotif.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Service/ServiceNotif.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Service/ServiceProducteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Service/ServiceProducteur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Service/ServiceSaison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Service/ServiceSaison.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Service/ServiceUtilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Service/ServiceUtilisateur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Controller/Goto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Controller/Goto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Controller/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projetjava2023/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projetjava2023/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/AvisProduit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/AvisProduit.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/LesAvisProduit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/LesAvisProduit.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/hi.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/kindaDone/consAct.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/kindaDone/consAct.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/kindaDone/login-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/kindaDone/login-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/kindaDone/producteur/Avis_Acteur.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/kindaDone/producteur/Avis_prod.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/kindaDone/producteur/hello-view-producteur.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/kindaDone/producteur/main_eps.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/kindaDone/producteur/main_eps.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/kindaDone/producteur/modifyProd.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/kindaDone/producteur/modifyProd.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/kindaDone/producteur/tobechange.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2OvoDg3AN2Rwv7psnDexmsFdvuW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -59,41 +42,27 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "app.teamhub.trackedBranches": "c725de/master",
-    "last_opened_file_path": "C:/Users/LENOVO/IdeaProjects/ProjetJava2023/src/main/resources",
+    "app.teamhub.trackedBranches": "",
+    "last_opened_file_path": "C:/Users/labou/IdeaProjects/ProjetJava2023/src/main/resources/javanet/kindaDone",
+    "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.52398527"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\LENOVO\IdeaProjects\ProjetJava2023\src\main\resources" />
-      <recent name="C:\Users\LENOVO\IdeaProjects\ProjetJava2023\src\main" />
-      <recent name="C:\Users\LENOVO\IdeaProjects\ProjetJava2023\src\main\java\com\example\projetjava2023" />
+      <recent name="C:\Users\labou\IdeaProjects\ProjetJava2023\src\main\resources\javanet\kindaDone\producteur" />
+      <recent name="C:\Users\labou\IdeaProjects\ProjetJava2023\src\main\resources\javanet" />
+      <recent name="C:\Users\labou\IdeaProjects\ProjetJava2023\src\main\resources\javanet\kindaDone" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.Controller" />
-      <recent name="com.example.projetjava2023" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.example.projetjava2023.HelloApplication">
+  <component name="RunManager">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.Controller.HelloApplication" />
-      <module name="ProjetJava2023" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.Controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.example.projetjava2023.HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.projetjava2023.HelloApplication" />
       <module name="ProjetJava2023" />
       <extension name="coverage">
@@ -108,7 +77,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.example.projetjava2023.HelloApplication" />
         <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
@@ -121,14 +89,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682450303461</updated>
-      <workItem from="1682450305081" duration="931000" />
-      <workItem from="1682451256720" duration="2378000" />
-      <workItem from="1682454125535" duration="2763000" />
+      <workItem from="1682450305081" duration="1000" />
     </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

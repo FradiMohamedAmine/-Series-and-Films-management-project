@@ -3,6 +3,8 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
@@ -13,12 +15,17 @@
     <children>
         <Pane fx:id="pane_top" prefHeight="500.0" prefWidth="500.0">
             <children>
-            <Button fx:id="btnout" layoutX="23.0" layoutY="15.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="56.0" text="OUT" textFill="#de0b0b" />
+            <Button fx:id="btnout" layoutX="23.0" layoutY="15.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="41.0" style="-fx-background-color: trans;" textFill="#de0b0b" />
             <Label fx:id="nameP" layoutX="177.0" layoutY="15.0" prefHeight="25.0" prefWidth="146.0" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
             </Label>
+            <ImageView fitHeight="22.0" fitWidth="26.0" layoutX="23.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logout-icon.png" />
+               </image>
+            </ImageView>
             </children>
         </Pane>
         <ScrollPane fx:id="scrollAvis" fitToWidth="true" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="50.0" AnchorPane.topAnchor="50.0">

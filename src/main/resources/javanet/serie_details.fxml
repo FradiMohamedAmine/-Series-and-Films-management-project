@@ -56,7 +56,7 @@
             <Font name="Bell MT Italic" size="22.0" />
          </font>
       </Label>
-      <Button layoutX="353.0" layoutY="571.0" mnemonicParsing="false" text="afficher Sason" />
+      <Button layoutX="353.0" layoutY="571.0" mnemonicParsing="false" styleClass="button1" stylesheets="@fullpackstyling.css" text="afficher Saison" />
       <VBox fx:id="avis" layoutX="7.0" layoutY="617.0" prefHeight="500.0" prefWidth="500.0" />
    </children>
 </AnchorPane>

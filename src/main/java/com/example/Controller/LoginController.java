@@ -12,7 +12,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
@@ -23,7 +22,7 @@ import java.util.regex.Pattern;
 import static com.example.Service.ServiceCompte.ajouterCompte;
 
 //N E W A C C O U N T
-public class loginController implements Initializable {
+public class LoginController implements Initializable {
     public static Personne p;
     @FXML
     private Button btnsignin;
