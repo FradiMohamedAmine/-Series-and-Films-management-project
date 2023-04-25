@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane minWidth="350.0" prefHeight="575.0" prefWidth="459.0" style="-fx-background-color: black; -fx-border-color: #DAA520; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.AjoutProduitController">
+<AnchorPane minWidth="350.0" prefHeight="575.0" prefWidth="459.0" style="-fx-background-color: black; -fx-border-color: #DAA520; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.AvisProduitController">
    <children>
       <TabPane fx:id="tabPane" layoutX="-38.0" layoutY="130.0" prefHeight="570.0" prefWidth="527.0" stylesheets="@main.css" tabClosingPolicy="UNAVAILABLE">
          <tabs>
@@ -51,7 +51,7 @@
                            </padding>
                         </TextField>
                         <ComboBox fx:id="comboboxF" prefHeight="38.0" prefWidth="436.0" promptText="genre" style="-fx-background-color: transparent; -fx-border-color: grey; -fx-border-radius: 70;" />
-                        <Button fx:id="btnCommitS" mnemonicParsing="false" onAction="#ajoutfilm" prefHeight="46.0" prefWidth="222.0" style="-fx-background-color: #DAA520;" text="commit" />
+                        <Button fx:id="btnCommitS" mnemonicParsing="false" prefHeight="46.0" prefWidth="222.0" style="-fx-background-color: #DAA520;" text="commit" />
                      </children>
                      <padding>
                         <Insets bottom="45.0" left="45.0" right="45.0" top="45.0" />
@@ -59,7 +59,7 @@
                   </VBox>
                </content>
             </Tab>
-            <Tab  style="-fx-background-color: transparent;" text="Serie">
+            <Tab fx:id="anneSortieS" style="-fx-background-color: transparent;" text="Serie">
                <content>
                   <VBox alignment="CENTER" prefHeight="530.0" prefWidth="465.0" spacing="20.0">
                      <children>

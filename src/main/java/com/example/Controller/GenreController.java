@@ -71,10 +71,8 @@ public class GenreController {
 
     private void handleCheckbox(CheckBox checkbox, String filmType) {
         if (checkbox.isSelected()) {
-            // Add film type to the ArrayList if the checkbox is selected
             filmTypes.add(filmType);
         } else {
-            // Remove film type from the ArrayList if the checkbox is deselected
             filmTypes.remove(filmType);
         }
     }

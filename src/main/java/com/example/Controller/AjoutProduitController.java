@@ -1,34 +1,46 @@
 package com.example.Controller;
-
 import com.example.Entities.Film;
 import com.example.Entities.Serie;
 import com.example.Service.ServiceFilm;
 import com.example.Service.ServiceSerie;
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
 import javafx.scene.control.TextField;
 
-public class AjoutProduitController {
-    @FXML
-    private Button S;
+import java.net.URL;
+import java.util.ResourceBundle;
 
+public class AjoutProduitController implements Initializable{
     @FXML
     private TextField anneSortieF;
 
     @FXML
-    private TextField anneSortieS;
+    private Tab anneSortieS;
+
+    @FXML
+    private TextField anneeSortieS;
+
+    @FXML
+    private Button btnCommitF;
 
     @FXML
     private Button btnCommitS;
 
     @FXML
-    private ComboBox<?> comboboxF;
+    private ComboBox comboboxF;
 
     @FXML
-    private ComboBox<?> comboboxS;
+    private ComboBox comboboxS;
+
+    @FXML
+    private TextField dureeF;
 
     @FXML
     private TextField langueF;
@@ -47,18 +59,15 @@ public class AjoutProduitController {
 
     @FXML
     private TextField producteurS;
-    @FXML
-    private TextField dureeF;
 
     @FXML
     private TabPane tabPane;
 
     @FXML
-    private TextField titreserie;
-
-    @FXML
     private TextField titrefilm;
 
+    @FXML
+    private TextField titreserie;
 
     @FXML
     void ajoutfilm(ActionEvent event) {
@@ -72,6 +81,10 @@ public class AjoutProduitController {
 
     }
 
-}
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        this.comboboxF.setItems(FXCollections.observableArrayList("comedie","dramatique","policier","action","historique","science_fiction").sorted());
 
+        this.comboboxS.setItems(FXCollections.observableArrayList("comedie","dramatique","policier","action","historique","science_fiction").sorted());
 
+    }}

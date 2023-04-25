@@ -341,9 +341,9 @@
                             <children>
                                 <AnchorPane fx:id="firstPic" maxHeight="500.0" maxWidth="1103.0" minHeight="300.0" minWidth="100.0" prefHeight="431.0" prefWidth="1090.0" style="-fx-background-color: black;">
                                     <children>
-                                        <ImageView fitHeight="499.0" fitWidth="900.0" layoutX="61.0" layoutY="-18.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-49.80000000000001" AnchorPane.leftAnchor="61.0" AnchorPane.rightAnchor="155.08891601562505" AnchorPane.topAnchor="-18.0">
+                                        <ImageView fitHeight="454.0" fitWidth="841.0" layoutX="2.0" layoutY="-18.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-135.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="260.0" AnchorPane.topAnchor="-18.0">
                                             <image>
-                                                <Image url="@deutscherfilm-goethe-institut-chefamajedid (1).jpg" />
+                                                <Image url="@gg.png" />
                                             </image>
                                         </ImageView>
                                     </children>

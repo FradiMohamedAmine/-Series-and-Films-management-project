@@ -42,13 +42,13 @@
          </font>
       </Label>
       <VBox fx:id="avis" layoutX="7.0" layoutY="584.0" prefHeight="216.0" prefWidth="375.0" />
-      <Button fx:id="btnAvis" layoutX="294.0" layoutY="496.0" mnemonicParsing="false" onAction="#ajouterAvis" text="ok" />
+      <Button fx:id="btnAvis" layoutX="294.0" layoutY="496.0" mnemonicParsing="false" onAction="#ajouterAvis" style="-fx-background-color: white;" text="ok" />
       <Label layoutX="148.0" layoutY="541.0" prefHeight="29.0" prefWidth="93.0" text="les Avis" textAlignment="CENTER" textFill="#f8f5f5">
          <font>
             <Font name="Arial Black" size="20.0" />
          </font>
       </Label>
-      <TextField fx:id="textAvis" layoutX="49.0" layoutY="481.0" prefHeight="55.0" prefWidth="227.0" text="Ecrire un avis ici">
+      <TextField fx:id="textAvis" layoutX="49.0" layoutY="481.0" prefHeight="55.0" prefWidth="227.0" style="-fx-background-color: trans; -fx-border-color: white; -fx-border-radius: 30;" text="Ecrire un avis ici">
          <font>
             <Font name="Arial" size="12.0" />
          </font>

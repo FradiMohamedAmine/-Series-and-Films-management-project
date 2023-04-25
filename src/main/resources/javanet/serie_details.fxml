@@ -66,11 +66,11 @@
             <Font name="Arial Black" size="20.0" />
          </font>
       </Label>
-      <TextField fx:id="textAvis" layoutX="92.0" layoutY="562.0" prefHeight="55.0" prefWidth="227.0" text="Ecrire un avis ici">
+      <TextField fx:id="textAvis" layoutX="92.0" layoutY="562.0" prefHeight="55.0" prefWidth="227.0" style="-fx-background-color: trans; -fx-border-color: white; -fx-border-radius: 30;" text="Ecrire un avis ici">
          <font>
             <Font name="Arial" size="12.0" />
          </font>
       </TextField>
-      <Button fx:id="btnAvis" layoutX="356.0" layoutY="577.0" mnemonicParsing="false" text="ok" />
+      <Button fx:id="btnAvis" layoutX="356.0" layoutY="577.0" mnemonicParsing="false" style="-fx-background-color: white;" text="ok" />
    </children>
 </AnchorPane>

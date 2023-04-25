@@ -4,8 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7161c78a-7d21-4e47-9b0e-35ab4905e204" name="Changes" comment="done">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Service/ServiceAvis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Service/ServiceAvis.java" afterDir="false" />
+    <list default="true" id="7161c78a-7d21-4e47-9b0e-35ab4905e204" name="Changes" comment="interfaces +controllers">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/javanet/AjoutSaiep.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/javanet/gg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Controller/AjoutProduitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Controller/AjoutProduitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Controller/GenreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Controller/GenreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Controller/Goto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Controller/Goto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Controller/GotoActeur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Controller/GotoActeur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Controller/LesAvisProduitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Controller/LesAvisProduitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Controller/StarsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Controller/StarsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/DAO/DAO_acteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/DAO/DAO_acteur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/ajout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/ajout.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/deutscherfilm-goethe-institut-chefamajedid.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/film.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/film.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/film_details.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/film_details.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/hello-view-producteurtest.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/hello-view-producteurtest.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/kindaDone/consAct.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/kindaDone/consAct.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/kindaDone/episode.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/kindaDone/episode.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/kindaDone/load.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/kindaDone/load.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/notif-confirmation.Namefxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/notif-confirmation-Name.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/password-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/serie.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/serie.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/javanet/serie_details.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/javanet/serie_details.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,40 +49,34 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2OvoDg3AN2Rwv7psnDexmsFdvuW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "app.teamhub.trackedBranches": "-1mupt46/master",
-    "last_opened_file_path": "C:/Users/alila/OneDrive/Bureau/alilahbib/javaFX/ProjetJava2023/src/main/resources/javanet",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
+    "app.teamhub.trackedBranches": "c725de/master",
+    "last_opened_file_path": "C:/Users/labou/IdeaProjects/ProjetJava2023/src/main/resources/javanet",
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.52398527",
-    "vue.rearranger.settings.migration": "true"
+    "project.structure.side.proportion": "0.52398527"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\alila\OneDrive\Bureau\alilahbib\javaFX\ProjetJava2023\src\main\resources\javanet" />
-      <recent name="C:\Users\alila\OneDrive\Bureau\alilahbib\javaFX\ProjetJava2023\src\main\resources\javanet\kindaDone" />
+      <recent name="C:\Users\labou\IdeaProjects\ProjetJava2023\src\main\resources\javanet" />
       <recent name="C:\Users\LENOVO\IdeaProjects\ProjetJava2023\src\main\resources" />
       <recent name="C:\Users\LENOVO\IdeaProjects\ProjetJava2023\src\main" />
       <recent name="C:\Users\LENOVO\IdeaProjects\ProjetJava2023\src\main\java\com\example\projetjava2023" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\alila\OneDrive\Bureau\alilahbib\javaFX\ProjetJava2023\src\main\resources\javanet" />
-      <recent name="C:\Users\alila\OneDrive\Bureau\alilahbib\javaFX\ProjetJava2023\src\main\resources\javanet\kindaDone" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.Controller" />
@@ -98,16 +115,7 @@
       <workItem from="1682450305081" duration="931000" />
       <workItem from="1682451256720" duration="2378000" />
       <workItem from="1682454125535" duration="2763000" />
-      <workItem from="1682463114948" duration="826000" />
     </task>
-    <task id="LOCAL-00001" summary="done">
-      <created>1682463882988</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1682463882988</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,7 +133,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="done" />
-    <option name="LAST_COMMIT_MESSAGE" value="done" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

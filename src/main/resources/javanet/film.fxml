@@ -10,33 +10,48 @@
 
 <VBox fx:id="Vboxprinci" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="248.0" prefWidth="500.0" styleClass="primary_color" stylesheets="@../com/example/old/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.FilmItemController">
     <children>
-        <ImageView fx:id="img" fitHeight="162.0" fitWidth="201.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="img" fitHeight="173.0" fitWidth="503.0" pickOnBounds="true" preserveRatio="true">
             <image>
             </image>
         </ImageView>
-        <Label fx:id="namef" prefHeight="0.0" prefWidth="263.0" text="Name du film" textFill="WHITE">
+        <Label fx:id="namef" alignment="CENTER" prefHeight="27.0" prefWidth="506.0" text="Name du film">
             <font>
                 <Font name="System Bold" size="18.0" />
             </font>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
         </Label>
-      <HBox prefHeight="100.0" prefWidth="200.0">
+      <HBox prefHeight="38.0" prefWidth="446.0">
          <children>
-              <Button fx:id="btnPlay" mnemonicParsing="false" onAction="#ajoutVu" text="play">
+              <Button fx:id="btnPlay" mnemonicParsing="false" onAction="#ajoutVu" style="-fx-background-color: trans;" text="play">
                <HBox.margin>
                   <Insets left="10.0" />
                </HBox.margin>
+               <font>
+                  <Font name="Bell MT Italic" size="15.0" />
+               </font>
               </Button>
-              <Button fx:id="btnFavoris" mnemonicParsing="false" onAction="#ajoutFavoris" text="favoris">
+              <Button fx:id="btnFavoris" mnemonicParsing="false" onAction="#ajoutFavoris" style="-fx-background-color: trans;" text="favoris">
                <HBox.margin>
                   <Insets left="10.0" />
                </HBox.margin>
+               <font>
+                  <Font name="Bell MT Italic" size="15.0" />
+               </font>
               </Button>
-            <Button fx:id="btnDetails" mnemonicParsing="false" onAction="#afficherDetailsFilm" text="Details">
+            <Button fx:id="btnDetails" mnemonicParsing="false" onAction="#afficherDetailsFilm" style="-fx-background-color: trans;" text="Details">
                <HBox.margin>
                   <Insets left="10.0" />
                </HBox.margin>
+               <font>
+                  <Font name="Bell MT Italic" size="15.0" />
+               </font>
             </Button>
          </children>
+         <VBox.margin>
+            <Insets left="160.0" />
+         </VBox.margin>
       </HBox>
     </children>
 </VBox>

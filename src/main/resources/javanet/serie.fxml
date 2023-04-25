@@ -10,11 +10,11 @@
 
 <VBox fx:id="Vboxprinci" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="248.0" prefWidth="500.0" styleClass="primary_color" stylesheets="@../com/example/old/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.SerieItemController">
     <children>
-        <ImageView fx:id="img" fitHeight="162.0" fitWidth="201.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="img" fitHeight="162.0" fitWidth="501.0" pickOnBounds="true" preserveRatio="true">
             <image>
             </image>
         </ImageView>
-        <Label fx:id="namef" prefHeight="0.0" prefWidth="263.0" text="Name du film" textFill="WHITE">
+        <Label fx:id="namef" prefHeight="27.0" prefWidth="506.0" text="Name du serie" textFill="#1b0000">
             <font>
                 <Font name="System Bold" size="18.0" />
             </font>

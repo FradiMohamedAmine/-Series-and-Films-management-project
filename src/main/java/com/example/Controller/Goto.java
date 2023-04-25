@@ -211,13 +211,7 @@ public class Goto implements Initializable {
         scrollFilmScienceFiction.setFitToWidth(true);
         addCardToScrollPaneFilmsScFi(FXCollections.observableArrayList(DAO_film.findAll()));
 
-        /*FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/film.fxml"));
-        String nomInterface="film";
-        try {
-            v.getChildren().add(new FXMLLoader(getClass().getResource("/javanet/"+nomInterface+".fxml")).load());
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }*/
+
     }
     public void addCardToScrollPaneFilmsRom(ObservableList<Film> films) {
         try {
@@ -225,11 +219,9 @@ public class Goto implements Initializable {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/film.fxml"));
                 Node node = loader.load();
 
-                // Set the data of the corresponding StudentItemController
                 FilmItemController studentItemController = loader.getController();
                 studentItemController.setData(f);
 
-                // Add the StudentItem to the VBox
                 hBoxScrollFilmRom.getChildren().add(node);
             }
 
@@ -242,15 +234,10 @@ public class Goto implements Initializable {
             for (Serie s : series) {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/serie.fxml"));
                 Node node = loader.load();
-              /*  FileChooser fc=new FileChooser();
-                fc.showOpenDialog(null).getPath();
-            File f =new File("C:\\Users\\alila\\OneDrive\\Bureau\\alilahbib\\Main.jpg");
-                Files.copy(fc.showOpenDialog(null).getPath(),"src/ressources/copy.jpg");*/
-                // Set the data of the corresponding StudentItemController
+
                 SerieItemController studentItemController = loader.getController();
                 studentItemController.setData(s);
 
-                // Add the StudentItem to the VBox
                 hBoxScrollSerieRom.getChildren().add(node);
             }
 
@@ -264,11 +251,9 @@ public class Goto implements Initializable {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/serie.fxml"));
                 Node node = loader.load();
 
-                // Set the data of the corresponding StudentItemController
                 SerieItemController studentItemController = loader.getController();
                 studentItemController.setData(s);
 
-                // Add the StudentItem to the VBox
                 hBoxScrollSerieAction.getChildren().add(node);
             }
 
@@ -282,11 +267,9 @@ public class Goto implements Initializable {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/film.fxml"));
                 Node node = loader.load();
 
-                // Set the data of the corresponding StudentItemController
                 FilmItemController studentItemController = loader.getController();
                 studentItemController.setData(f);
 
-                // Add the StudentItem to the VBox
                 hBoxScrollFilmAction.getChildren().add(node);
             }
 
@@ -300,11 +283,9 @@ public class Goto implements Initializable {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/film.fxml"));
                 Node node = loader.load();
 
-                // Set the data of the corresponding StudentItemController
                 FilmItemController studentItemController = loader.getController();
                 studentItemController.setData(f);
 
-                // Add the StudentItem to the VBox
                 hBoxScrollFilmCom.getChildren().add(node);
             }
 
@@ -318,11 +299,9 @@ public class Goto implements Initializable {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/serie.fxml"));
                 Node node = loader.load();
 
-                // Set the data of the corresponding StudentItemController
                 SerieItemController studentItemController = loader.getController();
                 studentItemController.setData(s);
 
-                // Add the StudentItem to the VBox
                 hBoxScrollSerieComedie.getChildren().add(node);
             }
 
@@ -336,11 +315,9 @@ public class Goto implements Initializable {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/film.fxml"));
                 Node node = loader.load();
 
-                // Set the data of the corresponding StudentItemController
                 FilmItemController studentItemController = loader.getController();
                 studentItemController.setData(f);
 
-                // Add the StudentItem to the VBox
                 hBoxScrollFilmDrama.getChildren().add(node);
             }
 
@@ -354,11 +331,9 @@ public class Goto implements Initializable {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/serie.fxml"));
                 Node node = loader.load();
 
-                // Set the data of the corresponding StudentItemController
                 SerieItemController studentItemController = loader.getController();
                 studentItemController.setData(s);
 
-                // Add the StudentItem to the VBox
                 hBoxScrollSerieDrama.getChildren().add(node);
             }
 
@@ -372,11 +347,9 @@ public class Goto implements Initializable {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/film.fxml"));
                 Node node = loader.load();
 
-                // Set the data of the corresponding StudentItemController
                 FilmItemController studentItemController = loader.getController();
                 studentItemController.setData(f);
 
-                // Add the StudentItem to the VBox
                 hBoxScrollFilmHis.getChildren().add(node);
             }
 
@@ -390,11 +363,9 @@ public class Goto implements Initializable {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/serie.fxml"));
                 Node node = loader.load();
 
-                // Set the data of the corresponding StudentItemController
                 SerieItemController studentItemController = loader.getController();
                 studentItemController.setData(s);
 
-                // Add the StudentItem to the VBox
                 hBoxScrollSerieHis.getChildren().add(node);
             }
 
@@ -408,11 +379,9 @@ public class Goto implements Initializable {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/film.fxml"));
                 Node node = loader.load();
 
-                // Set the data of the corresponding StudentItemController
                 FilmItemController studentItemController = loader.getController();
                 studentItemController.setData(f);
 
-                // Add the StudentItem to the VBox
                 hBoxScrollFilmPoli.getChildren().add(node);
             }
 
@@ -426,11 +395,9 @@ public class Goto implements Initializable {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/serie.fxml"));
                 Node node = loader.load();
 
-                // Set the data of the corresponding StudentItemController
                 SerieItemController studentItemController = loader.getController();
                 studentItemController.setData(s);
 
-                // Add the StudentItem to the VBox
                 hBoxScrollSeriePol.getChildren().add(node);
             }
 
@@ -444,12 +411,10 @@ public class Goto implements Initializable {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/film.fxml"));
                 Node node = loader.load();
 
-                // Set the data of the corresponding StudentItemController
                 FilmItemController studentItemController = loader.getController();
                 studentItemController.setData(f);
 
-                // Add the StudentItem to the VBox
-                hBoxScrollFilmScFi.getChildren().add(node);
+               hBoxScrollFilmScFi.getChildren().add(node);
             }
 
         } catch (IOException e) {
@@ -462,11 +427,9 @@ public class Goto implements Initializable {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/serie.fxml"));
                 Node node = loader.load();
 
-                // Set the data of the corresponding StudentItemController
                 SerieItemController studentItemController = loader.getController();
                 studentItemController.setData(s);
 
-                // Add the StudentItem to the VBox
                 hBoxScrollSerieScFi.getChildren().add(node);
             }
 
@@ -474,29 +437,7 @@ public class Goto implements Initializable {
             throw new RuntimeException(e);
         }
     }
-    /*public  void afficherDetailsSerie(Node node){
-        VboxToChange.getChildren().clear();
-        VboxToChange.getChildren().add(node);
-    }*/
 
-    /*public void deleteNode(int hashcode, String titre) throws SQLException {
-        // Remove the Node with the given hashcode from the VBox
-        filmVbox.getChildren().removeIf(e -> e.hashCode() == hashcode);
-
-        // Delete the corresponding student from the database
-        ServiceFilm.deleteFilm(new Film(titre));
-
-    }*/
-
-/*public void note () {
-    rating.ratingProperty().addListener(new ChangeListener<Number>() {
-        @Override
-        public void changed(ObservableValue<? extends Number> ob, Number oldV, Number newV) {
-    ratinglabel.setText("Rating :"+newV );
-        }
-    });
-
-}*/
 
 
 }

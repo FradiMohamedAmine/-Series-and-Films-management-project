@@ -139,11 +139,6 @@ public class DAO_acteur {
     }
 
 
-
-
-
-
-
     public static  boolean supprimerActeur(Acteur a) {//supprimer un acteur à partir d'un objet acteur
         PreparedStatement pstmt = null;
         ResultSet rs = null;
