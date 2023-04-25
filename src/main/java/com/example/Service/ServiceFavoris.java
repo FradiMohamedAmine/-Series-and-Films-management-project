@@ -4,7 +4,6 @@ import com.example.DAO.DAO_favoris;
 import com.example.Entities.*;
 
 import java.util.List;
-import java.util.Map;
 
 import static com.example.DAO.DAO_favoris.*;
 

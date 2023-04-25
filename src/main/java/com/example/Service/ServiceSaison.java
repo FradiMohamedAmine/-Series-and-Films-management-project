@@ -2,15 +2,11 @@ package com.example.Service;
 
 import com.example.DAO.DAO_Episode;
 import com.example.DAO.DAO_Saison;
-import com.example.Entities.Episode;
 import com.example.Entities.Saison;
 
 import java.time.LocalDate;
 import java.util.List;
 
-import static com.example.DAO.DAO_Episode.findBySaison;
-import static com.example.DAO.DAO_Episode.insererEpisode;
-import static com.example.DAO.DAO_Episode.modify;
 import static com.example.DAO.DAO_Saison.*;
 
 public class ServiceSaison {

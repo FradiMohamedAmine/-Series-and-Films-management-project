@@ -1,14 +1,11 @@
 package com.example.Service;
 
 import com.example.DAO.DAO_producteur;
-import com.example.DAO.DAO_utilisateur;
 import com.example.Entities.Producteur;
-import com.example.Entities.Utislisateur;
 
 import java.util.List;
 
 import static com.example.DAO.DAO_utilisateur.findAll;
-import static com.example.DAO.DAO_utilisateur.insererUtilisateur;
 
 public class ServiceProducteur {
     public static boolean ajouterProducteur(Producteur p) {

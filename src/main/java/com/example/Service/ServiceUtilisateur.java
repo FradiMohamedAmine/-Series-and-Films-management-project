@@ -1,7 +1,6 @@
 package com.example.Service;
 
 import com.example.DAO.DAO_utilisateur;
-import com.example.Entities.Produit;
 import com.example.Entities.Utislisateur;
 
 import java.util.ArrayList;

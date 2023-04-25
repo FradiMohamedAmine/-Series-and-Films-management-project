@@ -4,7 +4,6 @@ import com.example.Entities.Episode;
 import com.example.utils.ConxDB;
 
 import java.sql.*;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -87,7 +86,7 @@ public class DAO_Episode {
             pstmt.setString(4, e.getResume());
             pstmt.setInt(5, 0);
             pstmt.setInt(6,0);
-            pstmt.setDate(7,java.sql.Date.valueOf(e.getDateDiff()));
+            pstmt.setDate(7, Date.valueOf(e.getDateDiff()));
             pstmt.executeUpdate();
 
             rs = pstmt.getGeneratedKeys();

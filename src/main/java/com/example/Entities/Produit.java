@@ -1,7 +1,6 @@
 package com.example.Entities;
 
 import java.util.List;
-import java.util.Objects;
 
 public class Produit {
     protected  String titre;

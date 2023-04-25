@@ -1,8 +1,6 @@
 package com.example.DAO;
 
 import com.example.Entities.Film;
-import com.example.Entities.Saison;
-import com.example.Entities.Serie;
 import com.example.utils.ConxDB;
 
 import java.sql.*;

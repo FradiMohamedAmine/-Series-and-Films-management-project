@@ -1,15 +1,10 @@
 package com.example.Service;
 
 import com.example.DAO.DAO_Compte;
-import com.example.DAO.DAO_Episode;
-import com.example.DAO.DAO_acteur;
-import com.example.DAO.DAO_utilisateur;
 import com.example.Entities.*;
 
 import java.sql.SQLException;
 import java.util.List;
-
-import static com.example.Controller.loginController.p;
 
 public class ServiceCompte {
 

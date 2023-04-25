@@ -1,6 +1,5 @@
 package com.example.DAO;
 
-import com.example.Entities.Acteur;
 import com.example.Entities.Compte;
 import com.example.Entities.Producteur;
 import com.example.utils.ConxDB;

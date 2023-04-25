@@ -2,11 +2,14 @@ package com.example.Service;
 
 import com.example.DAO.DAO_Episode;
 import com.example.Entities.Episode;
+import com.example.Entities.Saison;
 import com.example.Entities.Serie;
 import com.example.Entities.Utislisateur;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static com.example.DAO.DAO_Episode.*;
 
@@ -55,16 +58,18 @@ public class ServiceEpisode {
         System.out.println("Un mumero d'epidode qui n'exicte pas");
         return null;
     }
-    public static Episode afficherComingSoonEpisodePrefere(Utislisateur u) {
+    public static List<Episode> afficherComingSoonEpisodePrefere(Utislisateur u) {
         ServiceFavoris serviceFavoris = new ServiceFavoris();
         List<Serie> serieList =serviceFavoris.afficherSerieFavorisDunUtilisateur(u.getNomprenom());
         List<Episode> episodeList = new ArrayList<>();
         for (Serie s : serieList){
-            for()
-            episodeList = findBySaison(s.getTitre(),s.) ;
-
+            for(Saison saison : s.getSaisons()) {
+                episodeList = findBySaison(s.getTitre(), saison.getNumeroSaison());
+            }
         }
-        return ;
+        List<Episode> episodeList1 = new ArrayList<>() ;
+        episodeList1 = episodeList.stream().filter(x->x.getDateDiff().isAfter(LocalDate.now())).collect(Collectors.toList());
+        return episodeList1 ;
     }
 
 

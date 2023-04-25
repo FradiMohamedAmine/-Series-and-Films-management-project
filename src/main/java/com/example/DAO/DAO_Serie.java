@@ -1,12 +1,10 @@
 package com.example.DAO;
 
-import com.example.Entities.Episode;
 import com.example.Entities.Saison;
 import com.example.Entities.Serie;
 import com.example.utils.ConxDB;
 
 import java.sql.*;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 

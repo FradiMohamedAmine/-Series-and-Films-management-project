@@ -1,16 +1,11 @@
 package com.example.DAO;
 
-import com.example.DAO.DAO_Serie;
-import com.example.DAO.DAO_film;
 import com.example.Entities.*;
 import com.example.utils.ConxDB;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 import static com.example.DAO.DAO_acteur.findAll;
 

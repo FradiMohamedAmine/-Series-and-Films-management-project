@@ -1,6 +1,5 @@
 package com.example.Entities;
 
-import java.util.List;
 import java.util.Map;
 
 public class Acteur extends Personne{

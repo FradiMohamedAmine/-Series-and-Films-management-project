@@ -12,25 +12,30 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 
-public class App extends Application {
+public class HelloApplication extends Application {
+    private static Scene scene;
+
     @Override
     public void start(Stage stage) throws IOException {
-        /*FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/javanet/kindaDone/hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        stage.setMaximized(true);
-        stage.setTitle("Hello!");
-        stage.setScene(scene);
-        stage.show();*/
-       // FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("/javanet/kindaDone/load.fxml"));
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/kindaDone/load.fxml"));
-        Parent root = loader.load();
-        LoadController controller = loader.getController();
-        Scene scene = new Scene(root);
+
+        scene = new Scene(loadFXML("login-view"));
         stage.setScene(scene);
         stage.show();
     }
 
+    public static void setRoot(String fxml) throws IOException {
+        scene.setRoot(loadFXML(fxml));
+    }
 
+    public static Parent loadFXML(String fxml) throws IOException {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/javanet/kindaDone/"+ fxml+".fxml"));
+            return fxmlLoader.load();
+        }catch (IOException e){
+            System.out.println("------------"+e.getMessage()+"--------------");
+        }
+        return null;
+    }
 
 
     public static void main(String[] args) throws SQLException {
