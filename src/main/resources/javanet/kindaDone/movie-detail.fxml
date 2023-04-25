@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minWidth="500.0" prefHeight="429.0" prefWidth="607.0" style="-fx-background-color: black; -fx-background-radius: 10;" stylesheets="@../css/fullpackstyling.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+            <Line endX="208.39999389648438" endY="167.8000030517578" layoutX="250.0" layoutY="-27.0" startX="208.39999389648438" startY="258.2232971191406" stroke="#e5e297" strokeDashOffset="2.0" strokeWidth="250.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="42.0" prefHeight="84.0" prefWidth="307.0" text="Total  Recall " textFill="#ffe5b4e3">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="47.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="147.0" prefHeight="97.0" prefWidth="322.0" text="para sghira behya   tji 3al films lkol " textFill="WHITE" />
+      <Label layoutX="13.0" layoutY="245.0" text="Cast " textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="330.0" text="name 1" textFill="#e1e1e1">
+         <font>
+            <Font name="Blackadder ITC" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="330.0" text="name 2" textFill="#e1e1e1">
+         <font>
+            <Font name="Blackadder ITC" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="170.0" layoutY="330.0" text="name 3" textFill="#e1e1e1">
+         <font>
+            <Font name="Blackadder ITC" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="246.0" layoutY="330.0" text="name 4" textFill="#e1e1e1">
+         <font>
+            <Font name="Blackadder ITC" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="111.0" text="Description" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="328.0" fitWidth="283.0" layoutX="340.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pos.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="59.0" layoutX="13.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../username-icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="342.0" layoutY="365.0" prefHeight="18.0" prefWidth="70.0" text="IMDB : 4.7 " textFill="#8e8888" />
+      <Label layoutX="447.0" layoutY="365.0" text="year: 2013" textFill="#8e8888" />
+      <Label layoutX="551.0" layoutY="365.0" text=" 2H 6min" textFill="#8e8888" />
+      <ImageView fitHeight="50.0" fitWidth="59.0" layoutX="88.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../username-icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="59.0" layoutX="244.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../username-icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="59.0" layoutX="167.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../username-icon.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="204.0" layoutY="383.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="214.0" styleClass="button2" stylesheets="@../fullpackstyling.css" text="watch trailer ">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font></Button>
+      <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: transp;">
+         <graphic>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="59.0" style="-fx-background-color: #F5F5DC; -fx-background-radius: 70;" text="drama">
+               <font>
+                  <Font name="Britannic Bold" size="13.0" />
+               </font>
+            </Label>
+         </graphic>
+      </Button>
+        </children>
+    </AnchorPane>

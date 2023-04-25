@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="1300.0" maxWidth="1601.0" minHeight="908.0" minWidth="1097.0" prefHeight="908.0" prefWidth="1097.0" style="-fx-background-color: black;" styleClass="primary_color" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.Goto">
+    <left>
+        <VBox prefHeight="908.0" prefWidth="201.0" spacing="20.0" styleClass="secondary-color" stylesheets="@../style.css" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="77.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../logo.png" />
+                    </image>
+                    <VBox.margin>
+                        <Insets left="30.0" top="40.0" />
+                    </VBox.margin>
+                </ImageView>
+                <VBox prefHeight="135.0" prefWidth="179.0" spacing="20.0" styleClass="selected" stylesheets="@../style.css">
+                    <children>
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="button1" stylesheets="@../fullpackstyling.css">
+                            <graphic>
+                                <HBox alignment="CENTER" onMouseClicked="#handle2" prefHeight="0.0" prefWidth="130.0" spacing="10.0">
+                                    <children>
+                                        <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../home-w-icon.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label prefHeight="0.0" prefWidth="97.0" text="HOME" textFill="WHITE">
+                                            <font>
+                                                <Font name="Book Antiqua Bold Italic" size="15.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                            </graphic>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="button1" stylesheets="@../fullpackstyling.css">
+                            <graphic>
+                                <HBox alignment="CENTER" onMouseClicked="#AfficherSeries" prefHeight="24.0" prefWidth="130.0" spacing="10.0" style="-fx-background-color: transparent;">
+                                    <children>
+                                        <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../icons8-lecture-50.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label prefHeight="18.0" prefWidth="119.0" styleClass="selected" text="SERIES" textFill="WHITE">
+                                            <font>
+                                                <Font name="Book Antiqua Bold Italic" size="15.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                            </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="button1" stylesheets="@../fullpackstyling.css">
+                            <graphic>
+                                <HBox alignment="CENTER" onMouseClicked="#AfficherFilm" prefHeight="23.0" prefWidth="149.0" spacing="10.0">
+                                    <children>
+                                        <ImageView fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../icons8-film-24.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label prefHeight="35.0" prefWidth="143.0" text="FILMS" textFill="WHITE">
+                                            <font>
+                                                <Font name="Book Antiqua Bold Italic" size="15.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                            </graphic>
+                        </Button>
+                    </children>
+                    <padding>
+                        <Insets left="10.0" right="10.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </VBox>
+                <VBox prefHeight="160.0" prefWidth="179.0" spacing="10.0" styleClass="selected" stylesheets="@../style.css">
+                    <children>
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="button1" stylesheets="@../fullpackstyling.css">
+                            <graphic>
+                                <Label prefHeight="19.0" prefWidth="130.0" text="Coming Soon" textFill="#f4f4f4">
+                                    <font>
+                                        <Font name="Book Antiqua Bold Italic" size="15.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../icons8-la-publicité-24.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <padding>
+                                        <Insets top="10.0" />
+                                    </padding>
+                                </Label>
+                            </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="172.0" styleClass="button1" stylesheets="@../fullpackstyling.css">
+                            <graphic>
+                                <Label prefHeight="32.0" prefWidth="154.0" text="Recently Watched" textFill="#f4f4f4">
+                                    <font>
+                                        <Font name="Book Antiqua Bold Italic" size="15.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../icons8-espion-64.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <padding>
+                                        <Insets top="10.0" />
+                                    </padding>
+                                </Label>
+                            </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="144.0" styleClass="button1" stylesheets="@../fullpackstyling.css">
+                            <graphic>
+                                <Label prefHeight="40.0" prefWidth="150.0" text="favoris" textFill="#f4f4f4">
+                                    <font>
+                                        <Font name="Book Antiqua Bold Italic" size="15.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="24.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../icons8-aimer-50.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <padding>
+                                        <Insets top="10.0" />
+                                    </padding>
+                                </Label>
+                            </graphic>
+                        </Button>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                    <padding>
+                        <Insets left="-5.0" right="10.0" top="10.0" />
+                    </padding>
+                </VBox>
+                <ImageView fx:id="logout" fitHeight="29.0" fitWidth="47.0" onMouseClicked="#handle" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../logout-icon.png" />
+                    </image>
+                </ImageView>
+                <VBox prefHeight="231.0" prefWidth="242.0" styleClass="selected" stylesheets="@../style.css">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="20.0">
+                            <children>
+                                <ImageView fitHeight="26.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../icons8-ajouter-un-employé-à-la-société-66.png" />
+                                    </image>
+                                </ImageView>
+                                <Label prefHeight="18.0" prefWidth="119.0" text="Contact Us" textFill="WHITE">
+                                    <font>
+                                        <Font name="Book Antiqua Bold Italic" size="15.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                            <VBox.margin>
+                                <Insets top="50.0" />
+                            </VBox.margin>
+                            <padding>
+                                <Insets top="10.0" />
+                            </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="20.0">
+                            <children>
+                                <ImageView fitHeight="24.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../icons8-privacy-policy-24.png" />
+                                    </image>
+                                </ImageView>
+                                <Label prefHeight="18.0" prefWidth="119.0" text="Our Policy" textFill="WHITE">
+                                    <font>
+                                        <Font name="Book Antiqua Bold Italic" size="15.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="20.0">
+                            <children>
+                                <ImageView fitHeight="22.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../icons8-about-24.png" />
+                                    </image>
+                                </ImageView>
+                                <Label prefHeight="18.0" prefWidth="119.0" text="About US" textFill="WHITE">
+                                    <font>
+                                        <Font name="Book Antiqua Bold Italic" size="15.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="20.0">
+                            <children>
+                                <ImageView fitHeight="24.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../icons8-aide-24.png" />
+                                    </image>
+                                </ImageView>
+                                <Label prefHeight="18.0" prefWidth="119.0" text="Help" textFill="WHITE">
+                                    <font>
+                                        <Font name="Book Antiqua Bold Italic" size="15.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <Button fx:id="out" mnemonicParsing="false" onAction="#handle" style="-fx-background-color: transparent;" />
+                    </children>
+                    <VBox.margin>
+                        <Insets top="50.0" />
+                    </VBox.margin>
+                </VBox>
+            </children>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </VBox>
+    </left>
+    <center>
+        <VBox fx:id="lalala" alignment="TOP_CENTER" prefHeight="899.0" prefWidth="941.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+            <children>
+                <HBox prefHeight="46.0" prefWidth="1080.0" spacing="20.0" style="-fx-background-color: black;">
+                    <children>
+                        <HBox>
+                            <children>
+                                <Button mnemonicParsing="false" style="-fx-background-color: transparent;">
+                                    <graphic>
+                                        <ImageView fitHeight="24.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../previous-icon.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <HBox.margin>
+                                        <Insets right="-11.0" top="10.0" />
+                                    </HBox.margin>
+                                </Button>
+                                <Button mnemonicParsing="false" style="-fx-background-color: transparent;">
+                                    <graphic>
+                                        <ImageView fitHeight="23.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../next-icon.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <HBox.margin>
+                                        <Insets right="-20.0" top="10.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </HBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" prefHeight="58.0" prefWidth="382.0" styleClass="search-container" stylesheets="@../style.css">
+                            <HBox.margin>
+                                <Insets bottom="10.0" right="200.0" top="10.0" />
+                            </HBox.margin>
+                            <children>
+                                <ImageView fitHeight="28.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../search-icon.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <TextField prefHeight="38.0" prefWidth="318.0" promptText="search " style="-fx-background-color: transparent;" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="68.0" prefWidth="149.0" spacing="10.0">
+                            <children>
+                                <ImageView fitHeight="28.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../user.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="20.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <Label fx:id="username" prefHeight="18.0" prefWidth="103.0" textFill="#f2d02a" wrapText="true">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                                </Label>
+                            </children>
+                            <HBox.margin>
+                                <Insets left="200.0" right="10.0" />
+                            </HBox.margin>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                        </HBox>
+                    </children>
+                </HBox>
+                <ScrollPane prefHeight="6000.0" prefWidth="4000.0" style="-fx-background-color: black;" VBox.vgrow="ALWAYS">
+                    <content>
+                        <VBox fx:id="VboxToChange" prefHeight="5000.0" prefWidth="1296.0" spacing="10.0" style="-fx-background-color: black;">
+                            <children>
+                                <AnchorPane fx:id="firstPic" maxHeight="500.0" maxWidth="1103.0" minHeight="300.0" minWidth="100.0" prefHeight="431.0" prefWidth="1090.0" style="-fx-background-color: black;">
+                                    <children>
+                                        <ImageView fitHeight="499.0" fitWidth="900.0" layoutX="61.0" layoutY="-18.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-49.80000000000001" AnchorPane.leftAnchor="61.0" AnchorPane.rightAnchor="155.08891601562505" AnchorPane.topAnchor="-18.0">
+                                            <image>
+                                                <Image url="@../deutscherfilm-goethe-institut-chefamajedid (1).jpg" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </AnchorPane>
+                        <AnchorPane id="FilmRom" fx:id="FilmRom" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                                      <Label prefHeight="27.0" prefWidth="163.0" text="Films Romantiques" textFill="WHITE" AnchorPane.topAnchor="0.0">
+                                          <font>
+                                              <Font size="18.0" />
+                                          </font>
+                                      </Label>
+                                      <ScrollPane fx:id="scrollFilmRomantic" fitToWidth="true" prefHeight="300.0" prefWidth="3500.0" style="-fx-background-color: black;" AnchorPane.topAnchor="30.0">
+                                         <content>
+                                            <HBox fx:id="hBoxScrollFilmRom" prefHeight="3500.0" prefWidth="3500.0" spacing="30.0">
+                                               <children>
+                                                  <VBox prefHeight="226.0" prefWidth="280.0">
+                                                     <children>
+                                                        <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                                                           <image>
+                                                              <Image url="@../romantic.jpg" />
+                                                           </image>
+                                                        </ImageView>
+                                                     </children>
+                                                  </VBox>
+                                               </children>
+                                            </HBox>
+                                         </content>
+                                      </ScrollPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="300.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="SerieRom" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                                      <Label prefHeight="27.0" prefWidth="163.0" text="Series Romantiques" textFill="WHITE">
+                                          <font>
+                                              <Font size="18.0" />
+                                          </font>
+                                      </Label>
+                                      <ScrollPane fx:id="scrollSerieRomantic" fitToWidth="true" prefHeight="300.0" prefWidth="3500.0" style="-fx-background-color: black;" AnchorPane.topAnchor="30.0">
+                                          <content>
+                                              <HBox fx:id="hBoxScrollSerieRom" prefHeight="300.0" prefWidth="3500.0" spacing="30.0">
+                                                  <children>
+                                                      <VBox prefHeight="226.0" prefWidth="280.0">
+                                                          <children>
+                                                              <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                                                                  <image>
+                                                                      <Image url="@../romantic.jpg" />
+                                                                  </image>
+                                                              </ImageView>
+                                                          </children>
+                                                      </VBox>
+                                                  </children>
+                                              </HBox>
+                                          </content>
+                                      </ScrollPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="100.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="FilmAct" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                                      <Label prefHeight="27.0" prefWidth="163.0" text="Films action" textFill="WHITE">
+                                          <font>
+                                              <Font size="18.0" />
+                                          </font>
+                                      </Label>
+                                      <ScrollPane fx:id="scrollFilmAction" fitToWidth="true" prefHeight="250.0" prefWidth="3000.0" style="-fx-background-color: black;" AnchorPane.topAnchor="30.0">
+                                          <content>
+                                              <HBox fx:id="hBoxScrollFilmAction" prefHeight="1000.0" prefWidth="5246.0" spacing="30.0">
+                                                  <children>
+                                                      <VBox prefHeight="226.0" prefWidth="280.0">
+                                                          <children>
+                                                              <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                                                                  <image>
+                                                                      <Image url="@../romantic.jpg" />
+                                                                  </image>
+                                                              </ImageView>
+                                                          </children>
+                                                      </VBox>
+                                                  </children>
+                                              </HBox>
+                                          </content>
+                                      </ScrollPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="100.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="SerieAction" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                                      <Label prefHeight="27.0" prefWidth="163.0" text="Series Action" textFill="WHITE">
+                                          <font>
+                                              <Font size="18.0" />
+                                          </font>
+                                      </Label>
+                                      <ScrollPane fx:id="scrollSerieAction" fitToWidth="true" prefHeight="250.0" prefWidth="3000.0" style="-fx-background-color: black;" AnchorPane.topAnchor="30.0">
+                                          <content>
+                                              <HBox fx:id="hBoxScrollSerieAction" prefHeight="1000.0" prefWidth="5246.0" spacing="30.0">
+                                                  <children>
+                                                      <VBox prefHeight="226.0" prefWidth="280.0">
+                                                          <children>
+                                                              <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                                                                  <image>
+                                                                      <Image url="@../romantic.jpg" />
+                                                                  </image>
+                                                              </ImageView>
+                                                          </children>
+                                                      </VBox>
+                                                  </children>
+                                              </HBox>
+                                          </content>
+                                      </ScrollPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="100.0" />
+                           </VBox.margin></AnchorPane>
+                        <AnchorPane fx:id="FilmCom" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                                      <Label prefHeight="27.0" prefWidth="163.0" text="Films Comedies" textFill="WHITE">
+                                          <font>
+                                              <Font size="18.0" />
+                                          </font>
+                                      </Label>
+                                      <ScrollPane fx:id="scrollFilmComedie" fitToWidth="true" prefHeight="250.0" prefWidth="3000.0" style="-fx-background-color: black;" AnchorPane.topAnchor="30.0">
+                                          <content>
+                                              <HBox fx:id="hBoxScrollFilmCom" prefHeight="1000.0" prefWidth="5246.0" spacing="30.0">
+                                                  <children>
+                                                      <VBox prefHeight="226.0" prefWidth="280.0">
+                                                          <children>
+                                                              <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                                                                  <image>
+                                                                      <Image url="@../romantic.jpg" />
+                                                                  </image>
+                                                              </ImageView>
+                                                          </children>
+                                                      </VBox>
+                                                  </children>
+                                              </HBox>
+                                          </content>
+                                      </ScrollPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="100.0" />
+                           </VBox.margin></AnchorPane>
+                        <AnchorPane fx:id="SerieCom" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                                      <Label prefHeight="27.0" prefWidth="163.0" text="Series Comedie" textFill="WHITE">
+                                          <font>
+                                              <Font size="18.0" />
+                                          </font>
+                                      </Label>
+                                      <ScrollPane fx:id="scrollSerieComedie" fitToWidth="true" prefHeight="250.0" prefWidth="3000.0" style="-fx-background-color: black;" AnchorPane.topAnchor="0.0">
+                                          <content>
+                                              <HBox fx:id="hBoxScrollSerieComedie" prefHeight="1000.0" prefWidth="5246.0" spacing="30.0">
+                                                  <children>
+                                                      <VBox prefHeight="226.0" prefWidth="280.0">
+                                                          <children>
+                                                              <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                                                                  <image>
+                                                                      <Image url="@../romantic.jpg" />
+                                                                  </image>
+                                                              </ImageView>
+                                                          </children>
+                                                      </VBox>
+                                                  </children>
+                                              </HBox>
+                                          </content>
+                                      </ScrollPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="100.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="SerieDrama" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                                      <Label prefHeight="27.0" prefWidth="163.0" text="Series dramatique" textFill="WHITE">
+                                          <font>
+                                              <Font size="18.0" />
+                                          </font>
+                                      </Label>
+      
+                                      <ScrollPane fx:id="scrollSerieDramatique" fitToWidth="true" prefHeight="250.0" prefWidth="3000.0" style="-fx-background-color: black;" AnchorPane.topAnchor="30.0">
+                                          <content>
+                                              <HBox fx:id="hBoxScrollSerieDrama" prefHeight="1000.0" prefWidth="5246.0" spacing="30.0">
+                                                  <children>
+                                                      <VBox prefHeight="226.0" prefWidth="280.0">
+                                                          <children>
+                                                              <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                                                                  <image>
+                                                                      <Image url="@../romantic.jpg" />
+                                                                  </image>
+                                                              </ImageView>
+                                                          </children>
+                                                      </VBox>
+                                                  </children>
+                                              </HBox>
+                                          </content>
+                                      </ScrollPane>
+                              <AnchorPane fx:id="FilmDrama" prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                            <Label prefHeight="27.0" prefWidth="163.0" text="Films Dramatique" textFill="WHITE">
+                                                <font>
+                                                    <Font size="18.0" />
+                                                </font>
+                                            </Label>
+                                            <ScrollPane fx:id="scrollFilmDramatique" fitToWidth="true" prefHeight="250.0" prefWidth="3000.0" style="-fx-background-color: black;" AnchorPane.topAnchor="30.0">
+                                                <content>
+                                                    <HBox fx:id="hBoxScrollFilmDrama" prefHeight="242.0" prefWidth="5246.0" spacing="30.0">
+                                                        <children>
+                                                            <VBox prefHeight="226.0" prefWidth="280.0">
+                                                                <children>
+                                                                    <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                                                                        <image>
+                                                                            <Image url="@../romantic.jpg" />
+                                                                        </image>
+                                                                    </ImageView>
+                                                                </children>
+                                                            </VBox>
+                                                        </children>
+                                                    </HBox>
+                                                </content>
+                                            </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="100.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="SerieHis" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                                      <Label prefHeight="27.0" prefWidth="163.0" text="Series Historique" textFill="WHITE">
+                                          <font>
+                                              <Font size="18.0" />
+                                          </font>
+                                      </Label>
+                                      <ScrollPane fx:id="scrollSerieHistorique" fitToWidth="true" prefHeight="250.0" prefWidth="3000.0" style="-fx-background-color: black;" AnchorPane.topAnchor="30.0">
+                                          <content>
+                                              <HBox fx:id="hBoxScrollSerieHis" prefHeight="242.0" prefWidth="5246.0" spacing="30.0">
+                                                  <children>
+                                                      <VBox prefHeight="226.0" prefWidth="280.0">
+                                                          <children>
+                                                              <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                                                                  <image>
+                                                                      <Image url="@../romantic.jpg" />
+                                                                  </image>
+                                                              </ImageView>
+                                                          </children>
+                                                      </VBox>
+                                                  </children>
+                                              </HBox>
+                                          </content>
+                                      </ScrollPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="100.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="FilmHis" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                                      <Label prefHeight="27.0" prefWidth="163.0" text="Films Historique" textFill="WHITE">
+                                          <font>
+                                              <Font size="18.0" />
+                                          </font>
+                                      </Label>
+                                      <ScrollPane fx:id="scrollFilmHistorique" fitToWidth="true" prefHeight="250.0" prefWidth="3000.0" style="-fx-background-color: black;" AnchorPane.topAnchor="30.0">
+                                          <content>
+                                              <HBox fx:id="hBoxScrollFilmHis" prefHeight="242.0" prefWidth="5246.0" spacing="30.0">
+                                                  <children>
+                                                      <VBox prefHeight="226.0" prefWidth="280.0">
+                                                          <children>
+                                                              <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                                                                  <image>
+                                                                      <Image url="@../romantic.jpg" />
+                                                                  </image>
+                                                              </ImageView>
+                                                          </children>
+                                                      </VBox>
+                                                  </children>
+                                              </HBox>
+                                          </content>
+                                      </ScrollPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="100.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="SeriePol" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                                      <Label prefHeight="27.0" prefWidth="163.0" text="Series Policier" textFill="WHITE">
+                                          <font>
+                                              <Font size="18.0" />
+                                          </font>
+                                      </Label>
+      
+                                      <ScrollPane fx:id="scrollSeriePolicier" fitToWidth="true" prefHeight="250.0" prefWidth="3000.0" style="-fx-background-color: black;" AnchorPane.topAnchor="30.0">
+                                          <content>
+                                              <HBox fx:id="hBoxScrollSeriePol" prefHeight="242.0" prefWidth="5246.0" spacing="30.0">
+                                                  <children>
+                                                      <VBox prefHeight="226.0" prefWidth="280.0">
+                                                          <children>
+                                                              <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                                                                  <image>
+                                                                      <Image url="@../romantic.jpg" />
+                                                                  </image>
+                                                              </ImageView>
+                                                          </children>
+                                                      </VBox>
+                                                  </children>
+                                              </HBox>
+                                          </content>
+                                      </ScrollPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="100.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="FilmPol" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                                      <Label prefHeight="27.0" prefWidth="163.0" text="Films Policier" textFill="WHITE">
+                                          <font>
+                                              <Font size="18.0" />
+                                          </font>
+                                      </Label>
+                                      <ScrollPane fx:id="scrollFilmPolicier" fitToWidth="true" prefHeight="250.0" prefWidth="3000.0" style="-fx-background-color: black;" AnchorPane.topAnchor="30.0">
+                                          <content>
+                                              <HBox fx:id="hBoxScrollFilmPoli" prefHeight="242.0" prefWidth="5246.0" spacing="30.0">
+                                                  <children>
+                                                      <VBox prefHeight="226.0" prefWidth="280.0">
+                                                          <children>
+                                                              <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                                                                  <image>
+                                                                      <Image url="@../romantic.jpg" />
+                                                                  </image>
+                                                              </ImageView>
+                                                          </children>
+                                                      </VBox>
+                                                  </children>
+                                              </HBox>
+                                          </content>
+                                      </ScrollPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="100.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="FilmScFi" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                                      <Label prefHeight="27.0" prefWidth="163.0" text="Films Science_Fiction" textFill="WHITE">
+                                          <font>
+                                              <Font size="18.0" />
+                                          </font>
+                                      </Label>
+                                      <ScrollPane fx:id="scrollFilmScienceFiction" fitToWidth="true" prefHeight="250.0" prefWidth="3000.0" style="-fx-background-color: black;" AnchorPane.topAnchor="30.0">
+                                          <content>
+                                              <HBox fx:id="hBoxScrollFilmScFi" prefHeight="242.0" prefWidth="5246.0" spacing="30.0">
+                                                  <children>
+                                                      <VBox prefHeight="226.0" prefWidth="280.0">
+                                                          <children>
+                                                              <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                                                                  <image>
+                                                                      <Image url="@../romantic.jpg" />
+                                                                  </image>
+                                                              </ImageView>
+                                                          </children>
+                                                      </VBox>
+                                                  </children>
+                                              </HBox>
+                                          </content>
+                                      </ScrollPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="100.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="SerieScFi" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                                      <Label prefHeight="27.0" prefWidth="163.0" text="Series Science-Fiction" textFill="WHITE">
+                                          <font>
+                                              <Font size="18.0" />
+                                          </font>
+                                      </Label>
+                                      <ScrollPane fx:id="scrollSerieScienceFiction" fitToWidth="true" prefHeight="250.0" prefWidth="3000.0" style="-fx-background-color: black;" AnchorPane.topAnchor="30.0">
+                                          <content>
+                                              <HBox fx:id="hBoxScrollSerieScFi" prefHeight="242.0" prefWidth="5246.0" spacing="30.0">
+                                                  <children>
+                                                      <VBox prefHeight="226.0" prefWidth="280.0">
+                                                          <children>
+                                                              <ImageView fitHeight="226.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                                                                  <image>
+                                                                      <Image url="@../romantic.jpg" />
+                                                                  </image>
+                                                              </ImageView>
+                                                          </children>
+                                                      </VBox>
+                                                  </children>
+                                              </HBox>
+                                          </content>
+                                      </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                            </children>
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                        </VBox>
+                    </content>
+                    <padding>
+                        <Insets left="20.0" />
+                    </padding>
+                </ScrollPane>
+            </children>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </VBox>
+    </center>
+</BorderPane>

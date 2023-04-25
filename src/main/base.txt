@@ -1,0 +1,52 @@
+base : NETFLIX
+
+
+table:
+************************
+EPISODES:
+
+TitreSerie varchar2 nottnull
+numeroSaison number notnull
+numeroEpisode number notnull
+resume varchar2
+vues number //par deff 0
+************************
+SAISONS:
+TitreSerie varchar2 nottnull
+numeroSaison number notnull
+dateSortie date
+resume varchar2
+avis varchar2
+score number
+*************************
+PRODUIT:
+titre varchar2 notnull
+realisateur varchar2
+anneeSortie number
+Langue varchar2
+paysOrigine varchar2
+type varchar2
+genre varchar2
+score number
+avis varchar2
+************************
+PERSONNE:
+nomComplet varchar2
+typePersonne varchar2
+mail varchar2
+mdp varchar2
+************************
+FAVORIS
+nomUtilisateur varchar2 
+nomProduit varchar2
+
+
+
+
+
+
+
+
+
+
+

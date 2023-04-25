@@ -1,0 +1,43 @@
+Episode:
+int numeroEpisode;
+String resume;
+int numeroSaison ;
+String nomSerie ;
+List<int> scores;
+List<String> avis;
+--------------------------------------------
+Saison:
+  int numeroSaison;
+  String resume;
+  int nbrEpisodes;
+  String nomSerie;
+  List<Episode> episodes;
+  LocalDate dateSortie;
+  List<Integer> scores;
+  List<String> avis;
+
+--------------------------------------------
+
+--------------------------------------------
+Produit:
+ String titre;
+ String producteur;
+ int dateSortie;
+ String langue;
+ String paysOrigine;
+ List<Integer> scores;
+ List<String> avis;
+ String cover ;
+********************
+Serie:
+List<Saison> saisons
+int nbrSaison
+********************
+Film:
+int duree;
+---------------------------------------------
+genre:
+List<?extends produit> listeProduit;
+
+
+

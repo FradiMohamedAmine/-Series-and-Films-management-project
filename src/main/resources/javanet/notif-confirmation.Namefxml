@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="186.0" prefWidth="456.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javanet.NotifConfirmation">
+   <children>
+      <Label alignment="CENTER" layoutX="8.0" layoutY="14.0" prefHeight="67.0" prefWidth="454.0" text="are you sure you wanna change your username ? " wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <PasswordField layoutX="27.0" layoutY="81.0" prefHeight="43.0" prefWidth="422.0" promptText="confirm with your password " />
+      <Button fx:id="btnsignin" layoutX="27.0" layoutY="145.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="167.0" text="confirm " />
+      <Button fx:id="btnsignin1" layoutX="280.0" layoutY="145.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="167.0" text="cancel " />
+   </children>
+</AnchorPane>

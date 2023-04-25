@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="527.0" prefWidth="396.0" style="-fx-background-color: black; -fx-border-color: #DAA520; -fx-border-width: 3;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.FilmDetailsController">
+   <children>
+      <ImageView fx:id="img1" fitHeight="206.0" fitWidth="333.0" layoutX="31.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pxfuel.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="namef1" alignment="CENTER" contentDisplay="CENTER" layoutX="48.0" layoutY="244.0" prefHeight="40.0" prefWidth="300.0" style="-fx-border-color: #DAA520; -fx-border-radius: 30;" text="nom serie" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="genre" alignment="CENTER" contentDisplay="CENTER" layoutX="48.0" layoutY="304.0" prefHeight="40.0" prefWidth="300.0" style="-fx-border-color: #DAA520; -fx-border-radius: 30;" text="genre " textFill="WHITE">
+         <font>
+            <Font name="Bell MT Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="producteur" alignment="CENTER" contentDisplay="CENTER" layoutX="49.0" layoutY="363.0" prefHeight="40.0" prefWidth="300.0" style="-fx-border-color: #DAA520; -fx-border-radius: 30;" text="producteur " textFill="WHITE">
+         <font>
+            <Font name="Bell MT Italic" size="22.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="47.0" layoutY="473.0" prefHeight="40.0" prefWidth="300.0" promptText="numero saison " style="-fx-border-color: #DAA520; -fx-background-color: trans; -fx-border-radius: 30;" />
+      <Label fx:id="note" alignment="CENTER" contentDisplay="CENTER" layoutX="48.0" layoutY="417.0" prefHeight="40.0" prefWidth="300.0" style="-fx-border-color: #DAA520; -fx-border-radius: 30;" text="note" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Italic" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
