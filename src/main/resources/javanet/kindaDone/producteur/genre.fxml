@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
-
 <AnchorPane prefHeight="789.0" prefWidth="1427.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.GenreController">
    <children>
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="312.0" layoutY="41.0" prefHeight="71.0" prefWidth="964.0" text="choose your favourite genres" textFill="#d9a121">
@@ -21,7 +20,7 @@
          <children>
             <ImageView fitHeight="230.0" fitWidth="365.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../wallpaperflare.com_wallpaper.jpg" />
+                  <Image url="@../../../javanet/wallpaperflare.com_wallpaper.jpg" />
                </image>
             </ImageView>
          </children>
@@ -30,7 +29,7 @@
          <children>
             <ImageView fitHeight="217.0" fitWidth="395.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../w9.jpg" />
+                  <Image url="@../../../javanet/w9.jpg" />
                </image>
             </ImageView>
          </children>
@@ -39,7 +38,7 @@
          <children>
             <ImageView fitHeight="230.0" fitWidth="373.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../w4.jpg" />
+                  <Image url="@../../../javanet/w4.jpg" />
                </image>
             </ImageView>
          </children>
@@ -48,7 +47,7 @@
          <children>
             <ImageView fitHeight="230.0" fitWidth="365.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../w14.jpg" />
+                  <Image url="@../../../javanet/w14.jpg" />
                </image>
             </ImageView>
          </children>
@@ -57,7 +56,7 @@
          <children>
             <ImageView fitHeight="219.0" fitWidth="365.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../w10.jpg" />
+                  <Image url="@../../../javanet/w10.jpg" />
                </image>
             </ImageView>
          </children>
@@ -66,7 +65,7 @@
          <children>
             <ImageView fitHeight="231.0" fitWidth="375.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../w7.jpg" />
+                  <Image url="@../../../javanet/w7.jpg" />
                </image>
             </ImageView>
          </children>
@@ -75,7 +74,7 @@
          <children>
             <ImageView fitHeight="212.0" fitWidth="365.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../w5.jpg" />
+                  <Image url="@../../../javanet/w5.jpg" />
                </image>
             </ImageView>
          </children>
@@ -117,36 +116,19 @@
       <CheckBox fx:id="check_policier" layoutX="914.0" layoutY="384.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="14.0" />
       <CheckBox fx:id="check_romantique" layoutX="1175.0" layoutY="482.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="14.0" />
       <CheckBox fx:id="check_action" layoutX="1316.0" layoutY="384.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="14.0" />
-      <Button fx:id="btn_next" layoutX="1481.0" layoutY="26.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="25.0" styleClass="button6" stylesheets="@../../fullpackstyling.css">
+      <Button fx:id="btn_next" layoutX="1481.0" layoutY="26.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="25.0" styleClass="button6" stylesheets="@../../../javanet/fullpackstyling.css">
          <padding>
             <Insets right="20.0" />
          </padding>
          <graphic>
             <ImageView fitHeight="40.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../next-icon.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
-      <Button fx:id="btn_next1" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="0.0" styleClass="button6" stylesheets="@../../fullpackstyling.css">
-         <padding>
-            <Insets right="20.0" />
-         </padding>
-         <graphic>
-            <ImageView fitHeight="40.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../previous-icon.png" />
+                  <Image url="@../../../javanet/next-icon.png" />
                </image>
             </ImageView>
          </graphic>
       </Button>
       <Label layoutX="1443.0" layoutY="28.0" text="NEXT" textFill="WHITE">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Label>
-      <Label layoutX="46.0" layoutY="25.0" text="BACK" textFill="WHITE">
          <font>
             <Font size="16.0" />
          </font>

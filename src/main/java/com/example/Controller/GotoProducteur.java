@@ -6,6 +6,7 @@ import com.example.Entities.Film;
 import com.example.Entities.Serie;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -18,13 +19,13 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import org.controlsfx.control.Rating ;
+import org.controlsfx.control.Rating;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Goto implements Initializable {
+public class GotoProducteur implements Initializable {
     @FXML
     private AnchorPane FilmAct;
 
@@ -143,6 +144,18 @@ public class Goto implements Initializable {
     @FXML
     private Label ratinglabel;
     @FXML
+    void Edit(ActionEvent event) throws IOException {
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/ajout.fxml"));
+        Node node = loader.load();
+        VboxToChange.getChildren().clear();
+        AjoutProduitController studentItemController = loader.getController();
+        VboxToChange.getChildren().add(node);
+
+
+
+    }
+    @FXML
     public void AfficherSeries(){
         VboxToChange.getChildren().clear();
         VboxToChange.getChildren().add(SerieAction);
@@ -164,6 +177,54 @@ public class Goto implements Initializable {
         VboxToChange.getChildren().add(FilmPol);
         VboxToChange.getChildren().add(FilmRom);
     }
+    @FXML
+    public void ConsulterMesProduction(){
+        String nameProducteur = LoginController.p.getNomprenom();
+        VboxToChange.getChildren().clear();
+        VboxToChange.getChildren().add(SerieAction);
+        VboxToChange.getChildren().add(SerieScFi);
+        VboxToChange.getChildren().add(SerieCom);
+        VboxToChange.getChildren().add(SerieDrama);
+        VboxToChange.getChildren().add(SerieHis);
+        VboxToChange.getChildren().add(SeriePol);
+        VboxToChange.getChildren().add(SerieRom);
+        VboxToChange.getChildren().add(FilmAct);
+        VboxToChange.getChildren().add(FilmScFi);
+        VboxToChange.getChildren().add(FilmCom);
+        VboxToChange.getChildren().add(FilmDrama);
+        VboxToChange.getChildren().add(FilmHis);
+        VboxToChange.getChildren().add(FilmPol);
+        VboxToChange.getChildren().add(FilmRom);
+        scrollFilmRomantic.setFitToWidth(true);
+        addCardToScrollPaneFilmsRom(FXCollections.observableArrayList(DAO_film.findByProducteur(nameProducteur)));
+        scrollSerieRomantic.setFitToWidth(true);
+        addCardToScrollPaneSeriesRom(FXCollections.observableArrayList(DAO_Serie.findByProducteur(nameProducteur)));
+        scrollSerieAction.setFitToWidth(true);
+        addCardToScrollPaneSeriesAction(FXCollections.observableArrayList(DAO_Serie.findByProducteur(nameProducteur)));
+        scrollFilmAction.setFitToWidth(true);
+        addCardToScrollPaneFilmsAction(FXCollections.observableArrayList(DAO_film.findByProducteur(nameProducteur)));
+        scrollFilmComedie.setFitToWidth(true);
+        addCardToScrollPaneFilmsCom(FXCollections.observableArrayList(DAO_film.findByProducteur(nameProducteur)));
+        scrollSerieComedie.setFitToWidth(true);
+        addCardToScrollPaneSeriesComedie(FXCollections.observableArrayList(DAO_Serie.findByProducteur(nameProducteur)));
+        scrollSerieDramatique.setFitToWidth(true);
+        addCardToScrollPaneSeriesDrama(FXCollections.observableArrayList(DAO_Serie.findByProducteur(nameProducteur)));
+        scrollFilmDramatique.setFitToWidth(true);
+        addCardToScrollPaneFilmsDrama(FXCollections.observableArrayList(DAO_film.findByProducteur(nameProducteur)));
+        scrollSerieHistorique.setFitToWidth(true);
+        addCardToScrollPaneSeriesHis(FXCollections.observableArrayList(DAO_Serie.findByProducteur(nameProducteur)));
+        scrollFilmHistorique.setFitToWidth(true);
+        addCardToScrollPaneFilmsHis(FXCollections.observableArrayList(DAO_film.findByProducteur(nameProducteur)));
+        scrollSeriePolicier.setFitToWidth(true);
+        addCardToScrollPaneSeriesPol(FXCollections.observableArrayList(DAO_Serie.findByProducteur(nameProducteur)));
+        scrollFilmPolicier.setFitToWidth(true);
+        addCardToScrollPaneFilmsPol(FXCollections.observableArrayList(DAO_film.findByProducteur(nameProducteur)));
+        scrollSerieScienceFiction.setFitToWidth(true);
+        addCardToScrollPaneSeriesScFi(FXCollections.observableArrayList(DAO_Serie.findByProducteur(nameProducteur)));
+        scrollFilmScienceFiction.setFitToWidth(true);
+        addCardToScrollPaneFilmsScFi(FXCollections.observableArrayList(DAO_film.findByProducteur(nameProducteur)));
+
+    }
     //tekhdm
     @FXML
     public void handle() throws IOException {
@@ -173,15 +234,15 @@ public class Goto implements Initializable {
         currentScene.setRoot(loginRoot);
     }
     @FXML
-    public void handle2() throws IOException {//affiche
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/kindaDone/hello-view.fxml"));
+    public void handle2() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/kindaDone/hello-view-producteurtest.fxml"));
         Parent loginRoot = loader.load();
         Scene currentScene =out.getScene();
         currentScene.setRoot(loginRoot);
     }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        this.username.setText(LoginController.p.getNomprenom());
+       this.username.setText(LoginController.p.getNomprenom());
         scrollFilmRomantic.setFitToWidth(true);
         addCardToScrollPaneFilmsRom(FXCollections.observableArrayList(DAO_film.findAll()));
         scrollSerieRomantic.setFitToWidth(true);
@@ -497,6 +558,31 @@ public class Goto implements Initializable {
     });
 
 }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }

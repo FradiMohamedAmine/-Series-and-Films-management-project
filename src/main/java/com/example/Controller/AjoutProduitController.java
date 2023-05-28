@@ -1,4 +1,5 @@
 package com.example.Controller;
+
 import com.example.Entities.Film;
 import com.example.Entities.Serie;
 import com.example.Service.ServiceFilm;
@@ -7,37 +8,41 @@ import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.Tab;
-import javafx.scene.control.TabPane;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
+import java.io.File;
 import java.net.URL;
+import java.util.Locale;
 import java.util.ResourceBundle;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
-public class AjoutProduitController implements Initializable{
+public class AjoutProduitController implements Initializable {
     @FXML
     private TextField anneSortieF;
-
     @FXML
-    private Tab anneSortieS;
+    private ComboBox<String> comboPays1;
 
     @FXML
     private TextField anneeSortieS;
 
     @FXML
     private Button btnCommitF;
-
+    @FXML
+    private TextArea subtext;
+    @FXML
+    private TextArea subtext1;
+    FileChooser fileChooser=new FileChooser();
     @FXML
     private Button btnCommitS;
 
     @FXML
-    private ComboBox comboboxF;
+    private ComboBox<String> comboboxF;
 
     @FXML
-    private ComboBox comboboxS;
+    private ComboBox<String> comboboxS;
 
     @FXML
     private TextField dureeF;
@@ -61,6 +66,14 @@ public class AjoutProduitController implements Initializable{
     private TextField producteurS;
 
     @FXML
+    private Label resultatF;
+
+    @FXML
+    private Label resultatS;
+
+    @FXML
+    private ComboBox<String> comboPays;
+    @FXML
     private TabPane tabPane;
 
     @FXML
@@ -69,22 +82,62 @@ public class AjoutProduitController implements Initializable{
     @FXML
     private TextField titreserie;
 
+
     @FXML
     void ajoutfilm(ActionEvent event) {
-        ServiceFilm.ajouterFilm(new Film(this.titrefilm.getText(),this.producteurF.getText(),Integer.valueOf(this.anneSortieF.getText()),this.langueF.getText(),this.paysF.getText(),Integer.valueOf(this.dureeF.getText())));
-
+        Film f =new Film(this.titrefilm.getText(),this.producteurF.getText(),Integer.valueOf(this.anneSortieF.getText()),this.langueF.getText(),this.comboPays.getValue(),Integer.valueOf(this.dureeF.getText()));
+        f.setGenre(this.comboboxF.getValue());
+        f.setCover(this.subtext.getText());
+        boolean resF= ServiceFilm.ajouterFilm(f);
+        if(resF){
+            this.resultatF.setText("ajout avec succes");
+        }
+        else this.resultatF.setText("verifier");
     }
-
     @FXML
     void ajoutserie(ActionEvent event) {
-        ServiceSerie.ajouterSerie(new Serie(this.titreserie.getText(),this.producteurS.getText(),Integer.valueOf(this.anneSortieS.getText()),this.langueS.getText(),this.paysS.getText()));
-
+        Serie s=new Serie(this.titreserie.getText(),this.producteurS.getText(),Integer.valueOf(this.anneeSortieS.getText()),this.langueS.getText(),this.comboPays1.getValue());
+        s.setGenre(this.comboboxS.getValue());
+        s.setCover(this.subtext1.getText());
+        boolean resS= ServiceSerie.ajouterSerie(s);
+        if(resS){
+            this.resultatS.setText("ajout avec succes");
+        }
+        else this.resultatS.setText("verifier");
     }
+    @FXML
+    void getText(ActionEvent event) {
+        File file=  fileChooser.showOpenDialog(new Stage());
+        this.subtext.setText(file.getPath());
+    }
+    @FXML
+    void getText1(ActionEvent event) {
+        File file=  fileChooser.showOpenDialog(new Stage());
+        this.subtext1.setText(file.getPath());
+    }
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        this.comboboxF.setItems(FXCollections.observableArrayList("comedie","dramatique","policier","action","historique","science_fiction").sorted());
+        this.comboboxF.setItems(FXCollections.observableArrayList("comedie","romantique","dramatique","policier","action","historique","science_fiction").sorted());
+        this.comboboxS.setItems(FXCollections.observableArrayList("comedie","dramatique","romantique","policier","action","historique","science_fiction").sorted());
+        this.producteurF.setText(LoginController.p.getNomprenom());
+        this.producteurS.setText(LoginController.p.getNomprenom());
+        this.producteurF.setDisable(true);
+        this.producteurS.setDisable(true);
+        this.comboPays.setItems(FXCollections.observableArrayList(Stream.of(Locale.getISOCountries())
+                .map(countryCode -> new Locale("", countryCode))
+                .map(locale -> locale.getDisplayCountry())
+                .sorted()
+                .collect(Collectors.toList())));
+        this.comboPays1.setItems(FXCollections.observableArrayList(Stream.of(Locale.getISOCountries())
+                .map(countryCode -> new Locale("", countryCode))
+                .map(locale -> locale.getDisplayCountry())
+                .sorted()
+                .collect(Collectors.toList())));
+        fileChooser.setInitialDirectory(new File("C:\\Users\\alila\\OneDrive\\Bureau"));
 
-        this.comboboxS.setItems(FXCollections.observableArrayList("comedie","dramatique","policier","action","historique","science_fiction").sorted());
+    }
+}
 
-    }}
+

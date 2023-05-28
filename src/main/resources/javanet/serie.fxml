@@ -8,34 +8,43 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="Vboxprinci" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="248.0" prefWidth="500.0" styleClass="primary_color" stylesheets="@../com/example/old/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.SerieItemController">
+<VBox fx:id="Vboxprinci" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="248.0" prefWidth="572.0" styleClass="primary_color" stylesheets="@../javanet/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.SerieItemController">
     <children>
-        <ImageView fx:id="img" fitHeight="162.0" fitWidth="501.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="img" fitHeight="162.0" fitWidth="366.0" pickOnBounds="true" preserveRatio="true">
             <image>
             </image>
+            <VBox.margin>
+                <Insets left="100.0" />
+            </VBox.margin>
         </ImageView>
-        <Label fx:id="namef" prefHeight="27.0" prefWidth="506.0" text="Name du serie" textFill="#1b0000">
+        <Label fx:id="namef" prefHeight="27.0" prefWidth="433.0" text="nom du serie" textFill="WHITE">
             <font>
                 <Font name="System Bold" size="18.0" />
             </font>
+            <padding>
+                <Insets left="220.0" />
+            </padding>
         </Label>
-      <HBox prefHeight="100.0" prefWidth="200.0">
-         <children>
-              <Button fx:id="btnFavoris" mnemonicParsing="false" onAction="#ajoutFavoris" text="favoris">
-               <HBox.margin>
-                  <Insets left="10.0" />
-               </HBox.margin>
-      
-              </Button>
-            <Button fx:id="btnDetails" mnemonicParsing="false" onAction="#afficherDetailsSerie" text="details">
-               <HBox.margin>
-                  <Insets left="10.0" />
-               </HBox.margin>
-            </Button>
-         </children>
-         <VBox.margin>
-            <Insets top="10.0" />
-         </VBox.margin>
-      </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Button fx:id="btnFavoris" mnemonicParsing="false" onAction="#ajoutFavoris" text="favoris">
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+
+                </Button>
+                <Button fx:id="btnDetails" mnemonicParsing="false" onAction="#afficherDetailsSerie" text="details">
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+            <padding>
+                <Insets left="220.0" />
+            </padding>
+        </HBox>
     </children>
 </VBox>

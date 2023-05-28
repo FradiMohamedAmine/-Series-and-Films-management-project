@@ -21,11 +21,9 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         stage.show();
     }
-
     public static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
     }
-
     public static Parent loadFXML(String fxml) throws IOException {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/javanet/kindaDone/"+ fxml+".fxml"));
@@ -35,7 +33,6 @@ public class HelloApplication extends Application {
         }
         return null;
     }
-
     public static void main(String[] args) throws SQLException {
         launch();
     }

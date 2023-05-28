@@ -12,7 +12,7 @@ import javafx.scene.layout.VBox;
 import java.io.IOException;
 import java.util.List;
 
-public class LesAvisProduitController {
+public class LesAvisProduitController extends SerieDetailsController {
     @FXML
     public VBox VboxAv;
 
@@ -27,23 +27,23 @@ public class LesAvisProduitController {
     @FXML
     public ScrollPane scrollFilmRomantic;
     public void initTable(String titre,List<AvisProduit> l) {
-    nameP.setText(titre);
-    try {
+        nameP.setText(titre);
+        try {
 
-        for(AvisProduit a : l){
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/AvisProduit.fxml"));
-            Node node = loader.load();
-            // Set the data of the corresponding StudentItemController
-            AvisProduitController avisproduitcontroller = loader.getController();
-            avisproduitcontroller.setData(a);
-            System.out.println("++++++++++++++++++");
+            for(AvisProduit a : l){
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/AvisProduit.fxml"));
+                Node node = loader.load();
+                // Set the data of the corresponding StudentItemController
+                AvisProduitController avisproduitcontroller = loader.getController();
+                avisproduitcontroller.setData(a);
+                System.out.println("++++++++++++++++++");
 
-            VboxAv.getChildren().add(node);
-        }
+                VboxAv.getChildren().add(node);
+            }
 
-    }catch (IOException e) {
-        throw new RuntimeException(e);
-    } ;
+        }catch (IOException e) {
+            throw new RuntimeException(e);
+        } ;
 
     }
 }

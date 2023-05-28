@@ -2,7 +2,6 @@ package com.example.Controller;
 import com.example.Entities.*;
 import com.example.Service.ServiceFavoris;
 import com.example.Service.ServiceFilm;
-import com.example.Service.ServiceSerie;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -16,7 +15,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.security.Provider;
 import java.sql.SQLException;
 
 public class FilmItemController {
@@ -49,7 +47,6 @@ public class FilmItemController {
             this.btnFavoris.setVisible(false);
         }
     }
-
     @FXML public void ajoutVu() throws SQLException {
         Film f = ServiceFilm.afficherFilm(namef.getText());
         ServiceFilm.ajouterVu(f);

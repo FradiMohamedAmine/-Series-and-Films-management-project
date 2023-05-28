@@ -12,6 +12,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.VBox;
 
 import java.io.IOException;
 import java.net.URL;
@@ -24,6 +25,9 @@ import static com.example.Service.ServiceCompte.ajouterCompte;
 //N E W A C C O U N T
 public class LoginController implements Initializable {
     public static Personne p;
+    public static Utislisateur u;
+    @FXML
+    private VBox vboxsignup;
     @FXML
     private Button btnsignin;
 
@@ -77,8 +81,14 @@ public class LoginController implements Initializable {
     }
 
     @FXML
-    public void handle() throws IOException {
+    public void handleUtilisateur() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/kindaDone/hello-view.fxml"));
+        Parent loginRoot = loader.load();
+        Scene currentScene =btnsignin.getScene();
+        currentScene.setRoot(loginRoot);
+    }
+    public void handleProducteur() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/kindaDone/hello-view-producteurtest.fxml"));
         Parent loginRoot = loader.load();
         Scene currentScene =btnsignin.getScene();
         currentScene.setRoot(loginRoot);
@@ -94,16 +104,14 @@ public class LoginController implements Initializable {
     void gotosignin(ActionEvent event) throws IOException {
         HelloApplication.setRoot("login-view");
     }
+
     @FXML
-    public void njareb(ActionEvent event) throws IOException {
-        HelloApplication.setRoot("login_view");//yraj3o ll login bch yaml sign in
-    }
-   @FXML
-   public void signUp(ActionEvent event) throws IOException, SQLException {
+    public void signUp(ActionEvent event) throws IOException, SQLException {
         String usernam = username.getText();
         String email = mail1.getText();
         String passwrd = password.getText();
-        String type = (String) combox.getValue();
+        String type = (String) combox.getValue(); // howa suggested eno naml cast
+        //ferghin walle
         if (usernam.isEmpty() || email.isEmpty() || passwrd.isEmpty() || combox.getValue() == null ) {
             showAlert("Please fill in all fields.");
             return;
@@ -126,15 +134,23 @@ public class LoginController implements Initializable {
 
         Compte newC = new Compte(email,passwrd ,type);
         Personne newUser = new Personne(usernam,newC);
-        if(ajouterCompte(newUser))
+        if(ajouterCompte(newUser)) {
             showAlert("Account created successfully.");
+            this.u=new Utislisateur(usernam,new Compte(email,passwrd,"utilisateur"));
+        }
         else showAlert("Account non created .");
-       // clear text fields after sign up
-       username.clear();
-       mail1.clear();
-       password.clear();
-      combox.setValue(null);
-      gotosignin(event);
+        // clear text fields after sign up
+        username.clear();
+        mail1.clear();
+        password.clear();
+         /*if(combox.getValue()=="utilisateur") {
+             FXMLLoader loader = new FXMLLoader(getClass().getResource("/javanet/kindaDone/genre.fxml"));
+             GenreController gr =loader.getController();
+             Node node = loader.load();
+             vboxsignup.getChildren().clear();
+             vboxsignup.getChildren().add(node);
+         }*/
+        gotosignin(event);
     }
 
     private boolean isValidEmail(String email) {
@@ -151,12 +167,11 @@ public class LoginController implements Initializable {
         return pattern.matcher(password).matches();
     }
 
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         //setLogo();
         redirectToLoginView();
-        combox.setItems(FXCollections.observableArrayList("producteur", "acteur","utilisateur"));
+        combox.setItems(FXCollections.observableArrayList("producteur","utilisateur"));
 
     }
 
@@ -175,26 +190,22 @@ public class LoginController implements Initializable {
     public void switchInterfaces() throws SQLException, IOException {
         Personne personne =connecter();
         if (personne==null)
-            com.example.Projetjava.HelloApplication.setRoot("login-view");//**** on remplace par l'inerface pour le signup
+            HelloApplication.setRoot("login-view");//**** on remplace par l'inerface pour le signup
         else
-            switch (personne.compte.getType()) {
-                case "acteur": {
-                   handle();
-                    //  showAlert(p.toString());
-                }
-                case "utilisateur": {
-                    handle();
+            switch (personne.getCompte().getType()) {
 
-                   // Utislisateur u = new Utislisateur(personne.getNomprenom(),personne.getCompte());
-                   // com.example.projetjavanerflix.HelloApplication.setRoot("+++++");//+++++on remplace par les interface utilisateur
+                case "utilisateur": {
+                    handleUtilisateur();
+                    // Utislisateur u = new Utislisateur(personne.getNomprenom(),personne.getCompte());
+                    // com.example.projetjavanerflix.App.setRoot("+++++");//+++++on remplace par les interface utilisateur
 
                 }
                 case "producteur": {
-                    handle();
+                    handleProducteur();
                 }
-                    Producteur pr = new Producteur(personne.getNomprenom(), personne.getCompte());
-                   // com.example.projetjavanerflix.HelloApplication.setRoot("+++++");//+++++on remplace par les interface producteur
-                   // showAlert(p.toString());}
+                Producteur pr = new Producteur(personne.getNomprenom(), personne.getCompte());
+                // com.example.projetjavanerflix.App.setRoot("+++++");//+++++on remplace par les interface producteur
+                // showAlert(p.toString());}
             }
 
 
@@ -202,10 +213,10 @@ public class LoginController implements Initializable {
     @FXML
     private  Personne connecter() throws SQLException, IOException {
 
-      Personne personne=DAO_Compte.get(mail.getText(),pswd.getText());
-      p=personne;
+        Personne personne=DAO_Compte.get(mail.getText(),pswd.getText());
+        p=personne;
 
-      return personne;
+        return personne;
 
     }
     @FXML
@@ -220,7 +231,6 @@ public class LoginController implements Initializable {
     @FXML
     public void dragged(MouseEvent mouseEvent) {
     }
-
 
 
 }

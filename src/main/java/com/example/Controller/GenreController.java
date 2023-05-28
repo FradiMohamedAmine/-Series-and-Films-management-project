@@ -1,5 +1,7 @@
 package com.example.Controller;
 
+import com.example.Entities.Genre;
+import com.example.Service.ServiceFavoris;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -12,13 +14,11 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.ArrayList;
-
 public class GenreController {
     @FXML
     private Button btn_next;
 
-    @FXML
-    private Button btn_next1;
+
     @FXML
     private CheckBox check_Sci;
 
@@ -43,21 +43,12 @@ public class GenreController {
     private ArrayList<String> filmTypes = new ArrayList<>();
     @FXML
     void handleButtonAction(ActionEvent event) throws IOException, IOException {
-        if(event.getSource() == btn_next) {
-            Parent helloViewParent = FXMLLoader.load(getClass().getResource("/javanet/kindaDone/hello_view.fxml"));
-            Scene helloViewScene = new Scene(helloViewParent);
-            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-            window.setScene(helloViewScene);
-            window.show();
-        } else if(event.getSource() == btn_next1) {
-            Parent loginParent = FXMLLoader.load(getClass().getResource("/javanet/kindaDone/login_view.fxml"));
-            Scene loginScene = new Scene(loginParent);
-            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-            window.setScene(loginScene);
-            window.show();
-        }
+        Parent helloViewParent = FXMLLoader.load(getClass().getResource("/javanet/kindaDone/login.fxml"));
+        Scene helloViewScene = new Scene(helloViewParent);
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(helloViewScene);
+        window.show();
     }
-
     public void initialize() {
         // Add event listeners to all checkboxes
         check_Sci.setOnAction(event -> handleCheckbox(check_Sci, "Science Fiction"));
@@ -68,13 +59,22 @@ public class GenreController {
         check_policier.setOnAction(event -> handleCheckbox(check_policier, "Crime"));
         check_romantique.setOnAction(event -> handleCheckbox(check_romantique, "Romance"));
     }
-
     private void handleCheckbox(CheckBox checkbox, String filmType) {
         if (checkbox.isSelected()) {
             filmTypes.add(filmType);
+            ServiceFavoris sf =new ServiceFavoris();
+            switch(filmType){
+                case "Science Fiction":sf.ajouterGenreFavorisDunUtilisateur(Genre.science_fiction, LoginController.u.getNomprenom());
+                case "Action":sf.ajouterGenreFavorisDunUtilisateur(Genre.science_fiction, LoginController.u.getNomprenom());
+                case "Comedy":sf.ajouterGenreFavorisDunUtilisateur(Genre.comedie, LoginController.u.getNomprenom());
+                case "Drama":sf.ajouterGenreFavorisDunUtilisateur(Genre.dramatique, LoginController.u.getNomprenom());
+                case "Historical":sf.ajouterGenreFavorisDunUtilisateur(Genre.historique, LoginController.u.getNomprenom());
+                case "Crime":sf.ajouterGenreFavorisDunUtilisateur(Genre.policier, LoginController.u.getNomprenom());
+                case "Romance":sf.ajouterGenreFavorisDunUtilisateur(Genre.policier, LoginController.u.getNomprenom());
+            }
+
         } else {
             filmTypes.remove(filmType);
         }
     }
-
 }
