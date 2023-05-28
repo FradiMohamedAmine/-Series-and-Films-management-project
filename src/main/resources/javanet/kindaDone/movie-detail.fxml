@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane minWidth="500.0" prefHeight="429.0" prefWidth="607.0" style="-fx-background-color: black; -fx-background-radius: 10;" stylesheets="@../css/fullpackstyling.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane minWidth="500.0" prefHeight="429.0" prefWidth="607.0" style="-fx-background-color: black; -fx-background-radius: 10;" stylesheets="@../../javanet/fullpackstyling.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
         <children>
             <Line endX="208.39999389648438" endY="167.8000030517578" layoutX="250.0" layoutY="-27.0" startX="208.39999389648438" startY="258.2232971191406" stroke="#e5e297" strokeDashOffset="2.0" strokeWidth="250.0" />
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="42.0" prefHeight="84.0" prefWidth="307.0" text="Total  Recall " textFill="#ffe5b4e3">

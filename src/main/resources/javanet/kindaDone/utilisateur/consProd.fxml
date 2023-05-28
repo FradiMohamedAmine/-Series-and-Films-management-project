@@ -13,7 +13,7 @@
    <top>
       <ImageView fitHeight="85.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <image>
-            <Image url="@../minion.png" />
+            <Image  />
          </image>
       </ImageView>
    </top>
